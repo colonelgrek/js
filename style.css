@@ -1,0 +1,21 @@
+html {
+    max-width: 928px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-block-start: 1em;
+    margin-block-end: 0.2em;
+}
+
+p {
+    margin-block-start: 0.1em;
+}
+
+pre {
+    border-bottom: 1px solid #696969;
+}
