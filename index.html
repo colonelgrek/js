@@ -20,68 +20,75 @@
     <h1>Задачи на JS</h1>
     <div>
         <h2>Простые числа</h2>
-        <p>Программа выводит все простые числа из интервала от 2 до n.</p>
+        <!-- <p>Программа выводит все простые числа из интервала от 2 до n.</p> -->
+        <p>Написать программу вывода всех простых чисел из интервала от 2 до n.</p>
+        <p>n вводит пользователь.</p>
         <pre><code class="language-JavaScript">
-            "use strict";
-            let number = prompt( "Введите число от 2 до n");
-            let primeNumber = "";
-            let buffer = 2;
-            if ( !( +number != +number ) && number >= 2){
-                for (let i = 2; i <= number; i++){
-                    for (let j = 2; j < i; j++){
-                        if ( !(i % j) ){
-                        buffer = "";
-                        break; 
-                        }
-                        buffer = i;
-                    }
-                    if ( buffer ) { primeNumber +=  buffer +", " ; }
-                }
-                alert ("Простые числа из интервала от 2 до n: \n" + 
-                primeNumber.substring(0, primeNumber.length-2));
-            } else { alert ( "Следует вводить только числа от 2 до n!" ); }
+"use strict";
+let number = prompt( "Введите число от 2 до n");
+let primeNumber = "";
+let buffer = 2;
+if ( !( +number != +number ) && number >= 2){
+    for (let i = 2; i <= number; i++){
+        for (let j = 2; j < i; j++){
+            if ( !(i % j) ){
+                buffer = "";
+                break; 
+            }
+            buffer = i;
+        }
+        if ( buffer ) { primeNumber +=  buffer +", " ; }
+    }
+    alert ("Простые числа из интервала от 2 до n: \n" + 
+    primeNumber.substring(0, primeNumber.length-2));
+} else { alert ( "Следует вводить только числа от 2 до n!" ); }
         </code></pre>
         <!-- <script src="jsTask/primeNumber.js"></script> -->
     </div>
     <div>
         <h2>Функция min(a, b)</h2>
-        <p>Программа выводит меньшее из двух чисел.</p>
+        <!-- <p>Программа выводит меньшее из двух чисел.</p> -->
+        <p>Написать программу вывода меньшего из двух чисел.</p>
+        <p>Числа вводит пользователь.</p>
         <pre><code class="language-JavaScript">
-            "use strict";
-            function min(a, b){
-                if (a == b) return "Числа равны";
-                return (a < b) ? a : b; 
-            }
+"use strict";
+function min(a, b){
+    if (a == b) return "Числа равны";
+    return (a < b) ? a : b; 
+}
             
-            let number1 = +prompt( "Введите первое число", 0);
-            let number2 = +prompt( "Введите второе число", 0);
+let number1 = +prompt( "Введите первое число", 0);
+let number2 = +prompt( "Введите второе число", 0);
             
-            if ( !isNaN(number1) && !isNaN(number2) ) {
-                alert ( min(number1, number2) );
-            } else alert ( "Следует вводить только числа!" );
+if ( !isNaN(number1) && !isNaN(number2) ) {
+    alert ( min(number1, number2) );
+} else alert ( "Следует вводить только числа!" );
         </code></pre>
         <!-- <script src="jsTask/minA_B.js"></script> -->
     </div>
     <div>
         <h2>Функция power(x, n)</h2>
-        <p>Программа возводит x в степень n (без испльзавния оператора "**"), n может принимать только натуральные значения.</p>
+        <!-- <p>Программа возводит x в степень n (без испльзавния оператора "**"),
+             n может принимать только натуральные значения.</p> -->
+        <p>Написать программу возведения числа х в степень n (без испльзавния оператора "**").</p>
+        <p>n может принимать только натуральные значения.</p>
         <pre><code class="language-JavaScript">
-            "use strict";
-            function power(x, n){
-                let result = 1;
-                for ( let i = 1; i <= n; i++ ){
-                    result *= x;
-                }
-                return result;
-            }
+"use strict";
+function power(x, n){
+    let result = 1;
+    for ( let i = 1; i <= n; i++ ){
+        result *= x;
+    }
+    return result;
+}
                 
-            let number = +prompt( "Введите число", 0);
-            let n = +prompt( "Введите степень (целое положительное число)", 0);
+let number = +prompt( "Введите число", 0);
+let n = +prompt( "Введите степень (целое положительное число)", 0);
             
-            if ( n < 0 ) {
-                alert ("Следует вводить только целые положительные числа для значения степени n!")
-            } else if ( !isNaN(number) && !isNaN(n) ) { alert ( power(number, n) );
-            } else { alert ( "Следует вводить только числа!" ); }        
+if ( n < 0 ) {
+    alert ("Следует вводить только целые положительные числа для значения степени n!")
+} else if ( !isNaN(number) && !isNaN(n) ) { alert ( power(number, n) );
+} else { alert ( "Следует вводить только числа!" ); }        
         </code></pre> 
         <!-- <script src="jsTask/powerX_n.js"></script>-->
     </div>
