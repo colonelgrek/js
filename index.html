@@ -68,6 +68,33 @@ if ( !( +number != +number ) && number >= 2){
         </code></pre>
         <!-- <script src="jsTask/primeNumber.js"></script> -->
     </div>
+        <div>
+        <h2>«FizzBuzz»</h2>
+        <p>Написать программу, которая выводит на экран числа от 1 до 100. 
+            При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz», 
+            а вместо чисел, кратных пяти — слово «Buzz». 
+            Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz».
+        </p>
+        <pre><code class="language-JavaScript">
+"use strict";
+let result = '';
+                
+for (let index = 1; index <= 100; index++) {
+    if ( index % 3 == 0 && index % 5 == 0 ){
+        result += 'FizzBuzz ';
+    } else if ( index % 3 == 0 ){
+        result += 'Fizz ';
+    } else if ( index % 5 == 0 ){
+        result += 'Buzz ';
+    } else {
+        result += index + ' ';
+    }  
+}
+                
+alert(result);
+        </code></pre>
+        <!-- <script src="jsTask/FizzBuzz.js"></script> -->
+    </div>
     <div>
         <h2>Функция min(a, b)</h2>
         <p>Написать программу вывода меньшего из двух чисел.</p>
@@ -121,5 +148,6 @@ if ( n < 0 ) {
 <script src="prism.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="progressBar.js"></script>
+<!-- <script src="jsTask/FizzBuzz.js"></script> -->
 </body>
 </html>
