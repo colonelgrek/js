@@ -3,6 +3,23 @@ html {
     margin: 0 auto;
 }
 
+nav ul li{    
+    display: inline-block;   
+}
+
+nav a:link {
+    color: black;
+}
+nav a:visited {
+    color: black;
+}
+nav a:hover {
+    color: red;
+}
+nav a:active {
+    color: red;
+}
+
 h1 {
     text-align: center;
 }
@@ -17,5 +34,20 @@ p {
 }
 
 pre {
-    border-bottom: 1px solid #696969;
+    border-bottom: 5px double #696969;
+}
+
+.solution-hide {
+    display: none;
+}
+
+/* .solution_button {
+
+} */
+
+.contents {
+    list-style: none;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border-left: 10px solid #c4c4c4;
 }

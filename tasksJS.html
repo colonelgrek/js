@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>petProject | tasks JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="themes/prism.css" rel="stylesheet">
+    <link href="themes/progressBar.css" rel="stylesheet">
+</head>
+<body>
+    <progress value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="tasksJS.html">Задачи на JS</a>  
+                </li>
+                <li>
+                    <a href="aboutMe.html">Обо мне</a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+<main>
+    <h1>Задачи на JS</h1>
+    <div>
+        <h2>Числовой палиндром</h2>
+        <p>Программа должна проверять: является ли число палиндромом?</p>
+        <p><a href="https://en.wikipedia.org/wiki/Palindromic_number" title="wikipedia">Палиндром</a>
+         - число, одинаково читающееся в обоих направлениях. Например 12321</p>
+        <p>Программа должна поддерживать только натуральные числа.</p>
+        <button class="button-play" data-name="numberPalindrome" type="button">Запустить программу</button>
+        <button class="button-solution" type="button">Код решения</button>
+        <pre><code class="language-JavaScript solution-hide">
+"use strict";
+let palindrome = +prompt( "Введите число? которое следует проверить", 0);
+let emordnilap = 0;
+let buffer = palindrome;
+            
+if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
+    alert ("Следует вводить только целые положительные числа!");
+} else { while (buffer!=0){
+            emordnilap = emordnilap*10+buffer%10;
+            buffer = Math.floor(buffer/10);
+        }
+    if (palindrome == emordnilap) alert ('Число ' + palindrome + ' является палиндром.');
+    else alert ('Число ' + palindrome + ' не является палиндром.');
+}
+        </code></pre>
+    </div>
+    <div>
+        <h2>Простые числа</h2>
+        <p>Написать программу вывода всех простых чисел из интервала от 2 до n.</p>
+        <p>n вводит пользователь.</p>
+        <button class="button-play" data-name="primeNumber" type="button">Запустить программу</button>
+        <button class="button-solution" type="button">Код решения</button>
+        <pre><code class="language-JavaScript solution-hide">
+"use strict";
+let number = prompt( "Введите число от 2 до n");
+let primeNumber = "";
+let buffer = 2;
+if ( !( +number != +number ) && number >= 2){
+    for (let i = 2; i <= number; i++){
+        for (let j = 2; j < i; j++){
+            if ( !(i % j) ){
+                buffer = "";
+                break; 
+            }
+            buffer = i;
+        }
+        if ( buffer ) { primeNumber +=  buffer +", " ; }
+    }
+    alert ("Простые числа из интервала от 2 до n: \n" + 
+    primeNumber.substring(0, primeNumber.length-2));
+} else { alert ( "Следует вводить только числа от 2 до n!" ); }
+        </code></pre>
+    </div>
+        <div>
+        <h2>«FizzBuzz»</h2>
+        <p>Написать программу, которая выводит на экран числа от 1 до 100. 
+            При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz», 
+            а вместо чисел, кратных пяти — слово «Buzz». 
+            Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz».
+        </p>
+        <button class="button-play" data-name="FizzBuzz" type="button">Запустить программу</button>
+        <button class="button-solution" type="button">Код решения</button>
+        <pre><code class="language-JavaScript solution-hide">
+"use strict";
+let result = '';
+                
+for (let index = 1; index <= 100; index++) {
+    if ( index % 3 == 0 && index % 5 == 0 ){
+        result += 'FizzBuzz ';
+    } else if ( index % 3 == 0 ){
+        result += 'Fizz ';
+    } else if ( index % 5 == 0 ){
+        result += 'Buzz ';
+    } else {
+        result += index + ' ';
+    }  
+}
+                
+alert(result);
+        </code></pre>
+    </div>
+    <div>
+        <h2>Функция min(a, b)</h2>
+        <p>Написать программу вывода меньшего из двух чисел.</p>
+        <p>Числа вводит пользователь.</p>
+        <button class="button-play" data-name="minA_B" type="button">Запустить программу</button>
+        <button class="button-solution" type="button">Код решения</button>
+        <pre><code class="language-JavaScript solution-hide">
+"use strict";
+function min(a, b){
+    if (a == b) return "Числа равны";
+    return (a < b) ? a : b; 
+}
+            
+let number1 = +prompt( "Введите первое число", 0);
+let number2 = +prompt( "Введите второе число", 0);
+            
+if ( !isNaN(number1) && !isNaN(number2) ) {
+    alert ( min(number1, number2) );
+} else alert ( "Следует вводить только числа!" );
+        </code></pre>
+    </div>
+    <div>
+        <h2>Функция power(x, n)</h2>
+        <p>Написать программу возведения числа х в степень n (без испльзавния оператора "**").</p>
+        <p>n может принимать только натуральные значения.</p>
+        <button class="button-play" data-name="powerX_n" type="button">Запустить программу</button>
+        <button class="button-solution" type="button">Код решения</button>
+        <pre><code class="language-JavaScript solution-hide">
+"use strict";
+function power(x, n){
+    let result = 1;
+    for ( let i = 1; i <= n; i++ ){
+        result *= x;
+    }
+    return result;
+}
+                
+let number = +prompt( "Введите число", 0);
+let n = +prompt( "Введите степень (целое положительное число)", 0);
+            
+if ( n < 0 ) {
+    alert ("Следует вводить только целые положительные числа для значения степени n!")
+} else if ( !isNaN(number) && !isNaN(n) ) { alert ( power(number, n) );
+} else { alert ( "Следует вводить только числа!" ); }        
+        </code></pre>
+    </div>
+    <div>   
+</main>
+<footer>
+    <a href="mailto:greser@ya.ru">greser@ya.ru</a>
+    <a href="tel:+79110079403">+7(911)007 94 03</a>
+</footer>
+<script src="prism.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="progressBar.js"></script>
+
+<script src="toggleVisibility.js"></script>
+<script src="playSolution.js"></script>
+
+<script src="jsTask/numberPalindrome.js"></script>
+<script src="jsTask/primeNumber.js"></script>
+<script src="jsTask/FizzBuzz.js"></script>
+<script src="jsTask/minA_B.js"></script>
+<script src="jsTask/powerX_n.js"></script>
+
+<script src="jsTask/tasks.js"></script>
+
+</body>
+</html>
