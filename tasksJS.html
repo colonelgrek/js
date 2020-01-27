@@ -34,7 +34,7 @@
         <h2>Числовой палиндром</h2>
         <p>Программа должна проверять: является ли число палиндромом?</p>
         <p><a href="https://en.wikipedia.org/wiki/Palindromic_number" title="wikipedia">Палиндром</a>
-         - число, одинаково читающееся в обоих направлениях. Например 12321</p>
+         - число, одинаково читающееся в обоих направлениях. Например 12321.</p>
         <p>Программа должна поддерживать только натуральные числа.</p>
         <button class="button-play" data-name="numberPalindrome" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
@@ -53,6 +53,32 @@ if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
     if (palindrome == emordnilap) alert ('Число ' + palindrome + ' является палиндром.');
     else alert ('Число ' + palindrome + ' не является палиндром.');
 }
+        </code></pre>
+    </div>
+    <div>
+        <h2>Считаем бобы</h2>
+        <p>Напишите функцию countBs, которая:<br>
+            - в качестве первого аргумента принимает строку,<br> 
+            - в качестве второго аргумента символ, который мы будем искать в строке,<br>
+            - возвращает количество символов, содержащихся в строке.
+        </p>
+        <button class="button-play" data-name="countChar" type="button">Запустить программу</button>
+        <button class="button-solution" type="button">Код решения</button>
+        <pre><code class="language-JavaScript solution-hide">
+"use strict";
+function countBs( string, letter ){
+    for (let i = 0, len = string.length-1; i <= len; i++) {
+        if ( letter == string[i] ) { count++ ;} 
+    }
+    return count;
+}    
+        
+let stringBase = prompt( "Введите строку, в которой необходимо найти символ", "");
+let char = prompt( "Введите символ, который необходимо найти в строке", "");
+let count = 0;
+        
+countBs( stringBase, char );
+alert ('В строке: "' + stringBase + '" ' + count + ' символов "' + char+ '"');
         </code></pre>
     </div>
     <div>
@@ -170,6 +196,7 @@ if ( n < 0 ) {
 <script src="playSolution.js"></script>
 
 <script src="jsTask/numberPalindrome.js"></script>
+<script src="jsTask/countChar.js"></script>
 <script src="jsTask/primeNumber.js"></script>
 <script src="jsTask/FizzBuzz.js"></script>
 <script src="jsTask/minA_B.js"></script>
