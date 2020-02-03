@@ -1,5 +1,5 @@
 html {
-    max-width: 928px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -33,9 +33,10 @@ p {
     margin: auto;
 }
 
-pre {
+/* pre {
+    padding: 0.5em 0;
     border-bottom: 5px double #696969;
-}
+} */
 
 .solution-hide {
     display: none;

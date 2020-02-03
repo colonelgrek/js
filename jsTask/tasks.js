@@ -4,4 +4,5 @@ let tasks = {
     FizzBuzz,
     minA_B,
     powerX_n,
+    countChar,
 };

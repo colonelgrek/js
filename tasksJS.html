@@ -38,22 +38,19 @@
         <p>Программа должна поддерживать только натуральные числа.</p>
         <button class="button-play" data-name="numberPalindrome" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
-        <pre><code class="language-JavaScript solution-hide">
-"use strict";
-let palindrome = +prompt( "Введите число? которое следует проверить", 0);
+        <pre><code class="language-JavaScript solution-hide">let palindrome = +prompt( 'Введите число? которое следует проверить', 0);
 let emordnilap = 0;
 let buffer = palindrome;
             
 if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
-    alert ("Следует вводить только целые положительные числа!");
+    alert ('Следует вводить только целые положительные числа!');
 } else { while (buffer!=0){
             emordnilap = emordnilap*10+buffer%10;
             buffer = Math.floor(buffer/10);
         }
     if (palindrome == emordnilap) alert ('Число ' + palindrome + ' является палиндром.');
     else alert ('Число ' + palindrome + ' не является палиндром.');
-}
-        </code></pre>
+}        </code></pre>
     </div>
     <div>
         <h2>Считаем бобы</h2>
@@ -64,22 +61,19 @@ if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
         </p>
         <button class="button-play" data-name="countChar" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
-        <pre><code class="language-JavaScript solution-hide">
-"use strict";
-function countBs( string, letter ){
+        <pre><code class="language-JavaScript solution-hide">function countBs( string, letter ){
     for (let i = 0, len = string.length-1; i <= len; i++) {
         if ( letter == string[i] ) { count++ ;} 
     }
     return count;
 }    
         
-let stringBase = prompt( "Введите строку, в которой необходимо найти символ", "");
-let char = prompt( "Введите символ, который необходимо найти в строке", "");
+let stringBase = prompt( 'Введите строку, в которой необходимо найти символ', '');
+let char = prompt( 'Введите символ, который необходимо найти в строке', '');
 let count = 0;
         
 countBs( stringBase, char );
-alert ('В строке: "' + stringBase + '" ' + count + ' символов "' + char+ '"');
-        </code></pre>
+alert ('В строке: "' + stringBase + '" ' + count + ' символов "' + char+ '"');        </code></pre>
     </div>
     <div>
         <h2>Простые числа</h2>
@@ -87,26 +81,23 @@ alert ('В строке: "' + stringBase + '" ' + count + ' символов "' 
         <p>n вводит пользователь.</p>
         <button class="button-play" data-name="primeNumber" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
-        <pre><code class="language-JavaScript solution-hide">
-"use strict";
-let number = prompt( "Введите число от 2 до n");
-let primeNumber = "";
+        <pre><code class="language-JavaScript solution-hide">let number = prompt( 'Введите число от 2 до n');
+let primeNumber = '';
 let buffer = 2;
 if ( !( +number != +number ) && number >= 2){
     for (let i = 2; i <= number; i++){
         for (let j = 2; j < i; j++){
             if ( !(i % j) ){
-                buffer = "";
+                buffer = '';
                 break; 
             }
             buffer = i;
         }
-        if ( buffer ) { primeNumber +=  buffer +", " ; }
+        if ( buffer ) { primeNumber +=  buffer +', ' ; }
     }
-    alert ("Простые числа из интервала от 2 до n: \n" + 
+    alert ('Простые числа из интервала от 2 до n: \n' + 
     primeNumber.substring(0, primeNumber.length-2));
-} else { alert ( "Следует вводить только числа от 2 до n!" ); }
-        </code></pre>
+} else { alert ( 'Следует вводить только числа от 2 до n!' ); }        </code></pre>
     </div>
         <div>
         <h2>«FizzBuzz»</h2>
@@ -117,9 +108,7 @@ if ( !( +number != +number ) && number >= 2){
         </p>
         <button class="button-play" data-name="FizzBuzz" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
-        <pre><code class="language-JavaScript solution-hide">
-"use strict";
-let result = '';
+        <pre><code class="language-JavaScript solution-hide">let result = '';
                 
 for (let index = 1; index <= 100; index++) {
     if ( index % 3 == 0 && index % 5 == 0 ){
@@ -133,8 +122,7 @@ for (let index = 1; index <= 100; index++) {
     }  
 }
                 
-alert(result);
-        </code></pre>
+alert(result);        </code></pre>
     </div>
     <div>
         <h2>Функция min(a, b)</h2>
@@ -142,20 +130,17 @@ alert(result);
         <p>Числа вводит пользователь.</p>
         <button class="button-play" data-name="minA_B" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
-        <pre><code class="language-JavaScript solution-hide">
-"use strict";
-function min(a, b){
-    if (a == b) return "Числа равны";
+        <pre><code class="language-JavaScript solution-hide">function min(a, b){
+    if (a == b) return 'Числа равны';
     return (a < b) ? a : b; 
 }
             
-let number1 = +prompt( "Введите первое число", 0);
-let number2 = +prompt( "Введите второе число", 0);
+let number1 = +prompt( 'Введите первое число', 0);
+let number2 = +prompt( 'Введите второе число', 0);
             
 if ( !isNaN(number1) && !isNaN(number2) ) {
     alert ( min(number1, number2) );
-} else alert ( "Следует вводить только числа!" );
-        </code></pre>
+} else alert ( 'Следует вводить только числа!' );        </code></pre>
     </div>
     <div>
         <h2>Функция power(x, n)</h2>
@@ -163,9 +148,7 @@ if ( !isNaN(number1) && !isNaN(number2) ) {
         <p>n может принимать только натуральные значения.</p>
         <button class="button-play" data-name="powerX_n" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
-        <pre><code class="language-JavaScript solution-hide">
-"use strict";
-function power(x, n){
+        <pre><code class="language-JavaScript solution-hide">function power(x, n){
     let result = 1;
     for ( let i = 1; i <= n; i++ ){
         result *= x;
@@ -173,14 +156,13 @@ function power(x, n){
     return result;
 }
                 
-let number = +prompt( "Введите число", 0);
-let n = +prompt( "Введите степень (целое положительное число)", 0);
+let number = +prompt( 'Введите число', 0);
+let n = +prompt( 'Введите степень (целое положительное число)', 0);
             
 if ( n < 0 ) {
-    alert ("Следует вводить только целые положительные числа для значения степени n!")
+    alert ('Следует вводить только целые положительные числа для значения степени n!')
 } else if ( !isNaN(number) && !isNaN(n) ) { alert ( power(number, n) );
-} else { alert ( "Следует вводить только числа!" ); }        
-        </code></pre>
+} else { alert ( 'Следует вводить только числа!' ); }        </code></pre>
     </div>
     <div>   
 </main>
@@ -188,12 +170,12 @@ if ( n < 0 ) {
     <a href="mailto:greser@ya.ru">greser@ya.ru</a>
     <a href="tel:+79110079403">+7(911)007 94 03</a>
 </footer>
-<script src="prism.js"></script>
+<script src="script/prism.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="progressBar.js"></script>
+<script src="script/progressBar.js"></script>
 
-<script src="toggleVisibility.js"></script>
-<script src="playSolution.js"></script>
+<script src="script/toggleVisibility.js"></script>
+<script src="script/playSolution.js"></script>
 
 <script src="jsTask/numberPalindrome.js"></script>
 <script src="jsTask/countChar.js"></script>
