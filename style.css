@@ -11,9 +11,22 @@ body {
 
 .nav a {
     display: inline-block;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px 5px 20px;
+    font-size: 16px;
+    line-height: 1.2em;
     text-decoration: none;
+    background-repeat: no-repeat;
 }
+
+.iconRubiksCube{
+    background-image: url(img/rubiksCube.svg);
+    background-position: left top;
+}
+
+.tasksJS .iconRubiksCube{
+    background-position: left bottom;
+}
+
 /* ------------------------------ */
 
 .contents {
