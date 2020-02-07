@@ -1,30 +1,37 @@
 body {
     font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
+    font-size: 16px;
     max-width: 960px;
     margin: 0 auto;
 }
 
 /* ---header--- */
 .nav li {
-    display: inline; 
+    display: inline;
 }
 
 .nav a {
     display: inline-block;
+    height: 18px;
     padding: 5px 15px 5px 20px;
     font-size: 16px;
     line-height: 1.2em;
     text-decoration: none;
     background-repeat: no-repeat;
+    /* text-align: center; */
+    /* border: 1px solid; */
 }
 
 .iconRubiksCube{
-    background-image: url(img/rubiksCube.svg);
-    background-position: left top;
+    background-image: url("img/rubiksCube.svg");
+    background-position: left 0; 
 }
 
-.tasksJS .iconRubiksCube{
-    background-position: left bottom;
+.main .home,
+.tasksJS .iconRubiksCube,
+.aboutMe .smile,
+.nav a:hover {
+    background-position: left -28px;
 }
 
 /* ------------------------------ */
@@ -58,6 +65,21 @@ pre {
     text-align: center;
 }
 /* ------------------------------ */
+
+.svg {
+    margin: 0 auto;
+    padding: 0;
+    width: 180px;
+    height: 490px;
+    border: 1px solid;
+    /* viewBox: 0 0 180 240; */
+    /* preserveAspectRatio: none; */
+}
+
+/* .test {
+    
+} */
+
 
 /* 
 nav a:link {
