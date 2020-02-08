@@ -1,3 +1,8 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
     font-size: 16px;
@@ -18,13 +23,24 @@ body {
     line-height: 1.2em;
     text-decoration: none;
     background-repeat: no-repeat;
-    /* text-align: center; */
-    /* border: 1px solid; */
 }
+/* FLOAT
+.nav li {
+    float: left;
+}
+.nav a {
+    display: block;
+    height: 18px;
+    padding: 5px 15px 5px 20px;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-decoration: none;
+    background-repeat: no-repeat;
+} */
 
 .iconRubiksCube{
     background-image: url("img/rubiksCube.svg");
-    background-position: left 0; 
+    background-position: left 0;
 }
 
 .main .home,
@@ -33,8 +49,32 @@ body {
 .nav a:hover {
     background-position: left -28px;
 }
-
 /* ------------------------------ */
+
+/* ---main--- */
+.firstblock{
+    float: left;
+    width: 80%;
+}
+
+.sidebar1 {
+    float: left;
+    width: 25%;
+}
+
+.main main {
+    float: right;
+    width: 75%;
+}
+
+.sidebar2 {
+    float: right;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
 
 .contents {
     list-style: none;
@@ -42,7 +82,7 @@ body {
     padding-left: 20px;
     border-left: 10px solid #c4c4c4;
 }
-
+/* ------------------------------ */
 /* ---tasksJS--- */
 pre {
     border-bottom: 5px double #696969;
@@ -55,7 +95,7 @@ pre {
     font-weight: bold;
     background: #f5f2f0;
     border-bottom: none;
-} 
+}
 
 .solution-hide {
     display: none;
@@ -66,22 +106,9 @@ pre {
 }
 /* ------------------------------ */
 
-.svg {
-    margin: 0 auto;
-    padding: 0;
-    width: 180px;
-    height: 490px;
-    border: 1px solid;
-    /* viewBox: 0 0 180 240; */
-    /* preserveAspectRatio: none; */
-}
-
-/* .test {
-    
-} */
 
 
-/* 
+/*
 nav a:link {
     color: black;
 }
