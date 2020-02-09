@@ -14,20 +14,24 @@
             <span class="progress-bar"></span>
         </div>
     </progress>
+<header>
     <nav>
         <ul class="nav">
             <li>
                 <a href="index.html" class="home">Главная</a>
             </li>
             <li>
-                <a href="tasksJS.html" class="iconRubiksCube">Задачи на JS</a>  
+                <a href="tasksJS.html" class="iconRubiksCube">Задачи</a>
             </li>
             <li>
                 <a href="aboutMe.html" class="smile">Обо мне</a>
             </li>
+            <li>
+                <a href="index.html" class="home"></a>
+            </li>
         </ul>
-    </nav> 
-    </header>
+    </nav>
+</header>
 <main>
     <h1>Задачи на JS</h1>
     <div>
@@ -41,7 +45,7 @@
         <pre><code class="language-JavaScript solution-hide">let palindrome = +prompt( 'Введите число? которое следует проверить', 0);
 let emordnilap = 0;
 let buffer = palindrome;
-            
+
 if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
     alert ('Следует вводить только целые положительные числа!');
 } else { while (buffer!=0){
@@ -55,7 +59,7 @@ if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
     <div>
         <h2>Считаем бобы</h2>
         <p>Напишите функцию countBs, которая:<br>
-            - в качестве первого аргумента принимает строку,<br> 
+            - в качестве первого аргумента принимает строку,<br>
             - в качестве второго аргумента символ, который мы будем искать в строке,<br>
             - возвращает количество символов, содержащихся в строке.
         </p>
@@ -63,15 +67,15 @@ if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">function countBs( string, letter ){
     for (let i = 0, len = string.length-1; i <= len; i++) {
-        if ( letter == string[i] ) { count++ ;} 
+        if ( letter == string[i] ) { count++ ;}
     }
     return count;
-}    
-        
+}
+
 let stringBase = prompt( 'Введите строку, в которой необходимо найти символ', '');
 let char = prompt( 'Введите символ, который необходимо найти в строке', '');
 let count = 0;
-        
+
 countBs( stringBase, char );
 alert ('В строке: "' + stringBase + '" ' + count + ' символов "' + char+ '"');        </code></pre>
     </div>
@@ -89,27 +93,27 @@ if ( !( +number != +number ) && number >= 2){
         for (let j = 2; j < i; j++){
             if ( !(i % j) ){
                 buffer = '';
-                break; 
+                break;
             }
             buffer = i;
         }
         if ( buffer ) { primeNumber +=  buffer +', ' ; }
     }
-    alert ('Простые числа из интервала от 2 до n: \n' + 
+    alert ('Простые числа из интервала от 2 до n: \n' +
     primeNumber.substring(0, primeNumber.length-2));
 } else { alert ( 'Следует вводить только числа от 2 до n!' ); }        </code></pre>
     </div>
-        <div>
+    <div>
         <h2>«FizzBuzz»</h2>
-        <p>Написать программу, которая выводит на экран числа от 1 до 100. 
-            При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz», 
-            а вместо чисел, кратных пяти — слово «Buzz». 
+        <p>Написать программу, которая выводит на экран числа от 1 до 100.
+            При этом вместо чисел, кратных трем, программа должна выводить слово «Fizz»,
+            а вместо чисел, кратных пяти — слово «Buzz».
             Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz».
         </p>
         <button class="button-play" data-name="FizzBuzz" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">let result = '';
-                
+
 for (let index = 1; index <= 100; index++) {
     if ( index % 3 == 0 && index % 5 == 0 ){
         result += 'FizzBuzz ';
@@ -119,9 +123,9 @@ for (let index = 1; index <= 100; index++) {
         result += 'Buzz ';
     } else {
         result += index + ' ';
-    }  
+    }
 }
-                
+
 alert(result);        </code></pre>
     </div>
     <div>
@@ -132,12 +136,12 @@ alert(result);        </code></pre>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">function min(a, b){
     if (a == b) return 'Числа равны';
-    return (a < b) ? a : b; 
+    return (a < b) ? a : b;
 }
-            
+
 let number1 = +prompt( 'Введите первое число', 0);
 let number2 = +prompt( 'Введите второе число', 0);
-            
+
 if ( !isNaN(number1) && !isNaN(number2) ) {
     alert ( min(number1, number2) );
 } else alert ( 'Следует вводить только числа!' );        </code></pre>
@@ -155,16 +159,16 @@ if ( !isNaN(number1) && !isNaN(number2) ) {
     }
     return result;
 }
-                
+
 let number = +prompt( 'Введите число', 0);
 let n = +prompt( 'Введите степень (целое положительное число)', 0);
-            
+
 if ( n < 0 ) {
     alert ('Следует вводить только целые положительные числа для значения степени n!')
 } else if ( !isNaN(number) && !isNaN(n) ) { alert ( power(number, n) );
 } else { alert ( 'Следует вводить только числа!' ); }        </code></pre>
     </div>
-    <div>   
+
 </main>
 <footer>
     <a href="mailto:greser@ya.ru">greser@ya.ru</a>

@@ -6,48 +6,73 @@
 body {
     font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
     font-size: 16px;
+    line-height: 1.2em;
+}
+
+.nav, .mainPage, main, .footer{
     max-width: 960px;
     margin: 0 auto;
 }
 
 /* ---header--- */
+header{
+    /* background-color: darkcyan; */
+    background-image: url('img/beePattern.jpg');
+    height: 90px;
+}
+
 .nav li {
-    display: inline;
+    float: left;
+    width: 15%;
+}
+
+.nav li:last-child {
+    width: 55%;
+    /* background-color: darkcyan; */
 }
 
 .nav a {
-    display: inline-block;
-    height: 18px;
-    padding: 5px 15px 5px 20px;
-    font-size: 16px;
-    line-height: 1.2em;
+    display: block;
+    height: 90px;
+    text-align: center;
     text-decoration: none;
+    color: black;
     background-repeat: no-repeat;
+    background-color: cornsilk;
+    background-position: center 25px;
 }
-/* FLOAT
+
+/* header {
+    background-color: darkcyan;
+}
 .nav li {
-    float: left;
+    display: inline-block;
+    height: 90px;
+    min-width: 90px;
+    text-align: center;
 }
 .nav a {
     display: block;
-    height: 18px;
-    padding: 5px 15px 5px 20px;
     font-size: 16px;
     line-height: 1.2em;
     text-decoration: none;
+    color: black;
+    background-color: cornsilk;
+    height: inherit;
     background-repeat: no-repeat;
+    background-position: center 25px;
 } */
-
-.iconRubiksCube{
-    background-image: url("img/rubiksCube.svg");
-    background-position: left 0;
-}
 
 .main .home,
 .tasksJS .iconRubiksCube,
 .aboutMe .smile,
 .nav a:hover {
-    background-position: left -28px;
+    background-position: center -60px;
+    background-color: tomato;
+}
+
+.iconRubiksCube {
+    background-image: url("img/rubiksCube.svg");
 }
 /* ------------------------------ */
 
@@ -60,11 +85,15 @@ body {
 .sidebar1 {
     float: left;
     width: 25%;
+
+    border: 1px solid;
 }
 
-.main main {
+.mainPart {
     float: right;
     width: 75%;
+
+    border: 1px solid;
 }
 
 .sidebar2 {
@@ -106,7 +135,9 @@ pre {
 }
 /* ------------------------------ */
 
-
+footer {
+    background-color: brown;
+}
 
 /*
 nav a:link {
