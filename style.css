@@ -7,6 +7,12 @@ body {
     font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2em;
+    background-image: url('img/810.gif');
+    background-size: 30%;
+}
+
+.mainPage, main, .firstblock, .sidebar2, .footer {
+    background-color: white;
 }
 
 .nav, .mainPage, main, .footer{
@@ -16,9 +22,9 @@ body {
 
 /* ---header--- */
 header{
-    /* background-color: darkcyan; */
-    background-image: url('img/beePattern.jpg');
     height: 90px;
+    background-image: url('img/810.gif');
+    background-size: 10%;
 }
 
 .nav li {
@@ -26,11 +32,6 @@ header{
     width: 15%;
 }
 
-.nav li:last-child {
-    width: 55%;
-    /* background-color: darkcyan; */
-}
-
 .nav a {
     display: block;
     height: 90px;
@@ -41,27 +42,6 @@ header{
     background-color: cornsilk;
     background-position: center 25px;
 }
-
-/* header {
-    background-color: darkcyan;
-}
-.nav li {
-    display: inline-block;
-    height: 90px;
-    min-width: 90px;
-    text-align: center;
-}
-.nav a {
-    display: block;
-    font-size: 16px;
-    line-height: 1.2em;
-    text-decoration: none;
-    color: black;
-    background-color: cornsilk;
-    height: inherit;
-    background-repeat: no-repeat;
-    background-position: center 25px;
-} */
 
 .main .home,
 .tasksJS .iconRubiksCube,
@@ -82,18 +62,14 @@ header{
     width: 80%;
 }
 
-.sidebar1 {
-    float: left;
-    width: 25%;
-
-    border: 1px solid;
-}
-
 .mainPart {
     float: right;
     width: 75%;
+}
 
-    border: 1px solid;
+.sidebar1 {
+    float: left;
+    width: 25%;
 }
 
 .sidebar2 {
@@ -112,6 +88,7 @@ footer {
     border-left: 10px solid #c4c4c4;
 }
 /* ------------------------------ */
+
 /* ---tasksJS--- */
 pre {
     border-bottom: 5px double #696969;
@@ -122,7 +99,7 @@ pre {
     margin: .5em 0 0 0;
     outline: none;
     font-weight: bold;
-    background: #f5f2f0;
+    background-color: #f5f2f0;
     border-bottom: none;
 }
 
@@ -135,9 +112,17 @@ pre {
 }
 /* ------------------------------ */
 
+/* ---footer--- */
 footer {
-    background-color: brown;
+    height: 90px;
+    background-image: url('img/810.gif');
+    background-size: 10%;
 }
+/* ------------------------------ */
+
+/* ---SVG--- */
+
+/* ------------------------------ */
 
 /*
 nav a:link {
@@ -152,18 +137,3 @@ nav a:hover {
 nav a:active {
     color: red;
 }
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    margin-block-start: 1em;
-    margin-block-end: 0.2em;
-}
-
-p {
-    margin: auto;
-}
-
- */
