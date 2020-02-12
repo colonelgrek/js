@@ -1,0 +1,24 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"  width="45" height="145" viewBox="0 0 90 290">
+  <g class="home">
+<title>home</title>
+  <rect fill="none" height="60" id="svg_3" stroke="#000000" stroke-width="3" width="70" x="9.5" y="30"/>
+  <line fill="none" id="svg_4" stroke="#000000" stroke-width="3" x1="1.5" x2="44.5" y1="36" y2="3"/>
+  <line fill="none" id="svg_5" stroke="#000000" stroke-width="3" x1="87.5" x2="44.5" y1="36" y2="3"/>
+  <rect fill="none" height="26.5" id="svg_5" stroke="#000000" stroke-width="3" width="30" x="29.5" y="41"/>
+  <line fill="none" id="svg_11" stroke="#000000" stroke-width="3" x1="44.5" x2="44.5" y1="41" y2="67"/>
+  <line fill="none" id="svg_21" stroke="#000000" stroke-width="3" x1="29.5" x2="59.5" y1="54" y2="54"/>
+  <line fill="none" id="svg_6" stroke="#000000" stroke-width="3" x1="64" x2="64" y1="6.5" y2="17.5"/>
+  <line fill="none" id="svg_7" stroke="#000000" stroke-width="3" x1="74" x2="74" y1="6.5" y2="25.5"/>
+  <line fill="none" id="svg_8" stroke="#000000" stroke-width="3" x1="64" x2="74" y1="6.5" y2="6.5"/>
+
+  <rect fill="#0E64D0" height="60" id="svg_16" stroke="#000000" stroke-width="2" width="70" x="9.5" y="230"/>
+  <line fill="none" id="svg_15" stroke="#000000" stroke-width="2" x1="1.5" x2="44.5" y1="236" y2="203"/>
+  <line fill="none" id="svg_14" stroke="#000000" stroke-width="2" x1="87.5" x2="44.5" y1="236" y2="203"/>
+  <polygon fill="#0E64D0" id="svg_17" points="1.5,236 44.5,203 87.5,236 1.5,236 " stroke="#000000" stroke-width="2"/>
+  <rect fill="#FFFE01" height="26.5" id="svg_13" stroke="#000000" stroke-width="2" width="30" x="29.5" y="241"/>
+  <line fill="none" id="svg_12" stroke="#000000" stroke-width="2" x1="44.5" x2="44.5" y1="241" y2="267"/>
+  <line fill="none" id="svg_10" stroke="#000000" stroke-width="2" x1="29.5" x2="59.5" y1="254" y2="254"/>
+  <polygon fill="#0E64D0" id="svg_18" points="64,206.5 64,217.5 74,225.5 74,206.5 64,206.5 " stroke="#000000" stroke-width="2"/>
+ </g>
+</svg>
