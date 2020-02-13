@@ -7,12 +7,31 @@ body {
     font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2em;
-     background-color: #f8f4f0;
+    background-color: #f8f4f0;
 }
 
 .nav, .wrap, .footer{
     max-width: 960px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h2 {
+    font-size: 1.17em;
+    margin: 0.83em 0;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+p {
+    margin: 1em 0;
 }
 
 /* ---header--- */
@@ -39,22 +58,22 @@ header{
     background-position: center 30px;
 }
 
-.main .home,
+.main .iconHome,
 .tasksJS .iconRubiksCube,
-.aboutMe .smile,
+.aboutMe .iconSmile,
 .nav a:hover {
     background-position: center -70px;
     background-color: #403F38;
     color: white;
 }
 
-.home {
+.iconHome {
     background-image: url("img/home-v1.svg");
 }
 .iconRubiksCube {
     background-image: url("img/rubiksCube-v1.svg");
 }
-.smile {
+.iconSmile {
     background-image: url("img/smile-v1.svg");
 }
 /* ------------------------------ */
@@ -67,6 +86,7 @@ header{
 .mainSection {
     float: left;
     width: 60%;
+    padding: 0 10px;
 }
 
 .sidebar2 {
@@ -97,7 +117,8 @@ footer {
 /* ------------------------------ */
 
 /* ---tasksJS--- */
-pre {
+hr {
+    border: 0;
     border-bottom: 5px double #696969;
 }
 

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>petProject | tasks JS</title>
+    <title>sandbox || petProject || tasks JS</title>
     <link rel="stylesheet" href="themes/resetCSS.css">
     <link rel="stylesheet" href="style.css?v=1">
     <link href="themes/prism.css" rel="stylesheet">
@@ -18,13 +18,13 @@
     <nav>
         <ul class="nav">
             <li>
-                <a href="index.html" class="home">Главная</a>
+                <a href="index.html" class="iconHome">Главная</a>
             </li>
             <li>
                 <a href="tasksJS.html" class="iconRubiksCube">Задачи</a>
             </li>
             <li>
-                <a href="aboutMe.html" class="smile">Обо мне</a>
+                <a href="aboutMe.html" class="iconSmile">Обо мне</a>
             </li>
         </ul>
     </nav>
@@ -33,10 +33,8 @@
     <h1>Задачи на JS</h1>
     <div>
         <h2>Числовой палиндром</h2>
-        <p>Программа должна проверять: является ли число палиндромом?</p>
-        <p><a href="https://en.wikipedia.org/wiki/Palindromic_number" title="wikipedia">Палиндром</a>
-         - число, одинаково читающееся в обоих направлениях. Например 12321.</p>
-        <p>Программа должна поддерживать только натуральные числа.</p>
+        <p>Программа должна проверять: является ли число палиндромом? <a href="https://en.wikipedia.org/wiki/Palindromic_number" title="wikipedia">Палиндром</a>
+         - число, одинаково читающееся в обоих направлениях. Например 12321. Программа должна поддерживать только натуральные числа.</p>
         <button class="button-play" data-name="numberPalindrome" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">let palindrome = +prompt( 'Введите число? которое следует проверить', 0);
@@ -52,6 +50,7 @@ if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
     if (palindrome == emordnilap) alert ('Число ' + palindrome + ' является палиндром.');
     else alert ('Число ' + palindrome + ' не является палиндром.');
 }        </code></pre>
+    <hr>
     </div>
     <div>
         <h2>Считаем бобы</h2>
@@ -76,10 +75,10 @@ let count = 0;
 countBs( stringBase, char );
 alert ('В строке: "' + stringBase + '" ' + count + ' символов "' + char+ '"');        </code></pre>
     </div>
+    <hr>
     <div>
         <h2>Простые числа</h2>
-        <p>Написать программу вывода всех простых чисел из интервала от 2 до n.</p>
-        <p>n вводит пользователь.</p>
+        <p>Написать программу вывода всех простых чисел из интервала от 2 до n (n вводит пользователь).</p>
         <button class="button-play" data-name="primeNumber" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">let number = prompt( 'Введите число от 2 до n');
@@ -100,6 +99,7 @@ if ( !( +number != +number ) && number >= 2){
     primeNumber.substring(0, primeNumber.length-2));
 } else { alert ( 'Следует вводить только числа от 2 до n!' ); }        </code></pre>
     </div>
+    <hr>
     <div>
         <h2>«FizzBuzz»</h2>
         <p>Написать программу, которая выводит на экран числа от 1 до 100.
@@ -125,10 +125,10 @@ for (let index = 1; index <= 100; index++) {
 
 alert(result);        </code></pre>
     </div>
+    <hr>
     <div>
         <h2>Функция min(a, b)</h2>
-        <p>Написать программу вывода меньшего из двух чисел.</p>
-        <p>Числа вводит пользователь.</p>
+        <p>Написать программу вывода меньшего из двух чисел. Числа вводит пользователь.</p>
         <button class="button-play" data-name="minA_B" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">function min(a, b){
@@ -143,10 +143,10 @@ if ( !isNaN(number1) && !isNaN(number2) ) {
     alert ( min(number1, number2) );
 } else alert ( 'Следует вводить только числа!' );        </code></pre>
     </div>
+    <hr>
     <div>
         <h2>Функция power(x, n)</h2>
-        <p>Написать программу возведения числа х в степень n (без испльзавния оператора "**").</p>
-        <p>n может принимать только натуральные значения.</p>
+        <p>Написать программу возведения числа х в степень n (без использования оператора "**"). n может принимать только натуральные значения.</p>
         <button class="button-play" data-name="powerX_n" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">function power(x, n){
@@ -174,7 +174,7 @@ if ( n < 0 ) {
     </div>
 </footer>
 <script src="script/prism.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="script/progressBar.js"></script>
 
 <script src="script/toggleVisibility.js"></script>
