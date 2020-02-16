@@ -17,21 +17,26 @@ body {
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0;
+    margin: 0.67em 0.33em;
 }
 h2 {
     font-size: 1.17em;
-    margin: 0.83em 0;
-}
-
-hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
+    margin: 0.83em 0.33em;
 }
 
 p {
     margin: 1em 0;
+}
+
+.contents {
+    list-style: none;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border-left: 10px solid #0E64D0;
+}
+
+.contents:nth-child(even) {
+    border-left: 10px solid #2e8b57;
 }
 
 /* ---header--- */
@@ -82,6 +87,7 @@ header{
 .sidebar1 {
     float: left;
     width: 20%;
+    overflow: hidden;
 }
 .mainSection {
     float: left;
@@ -98,11 +104,8 @@ footer {
     clear: both;
 }
 
-.contents {
-    list-style: none;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    border-left: 10px solid #0E64D0;
+.endSection {
+    border-bottom: 2px solid #2f4f4f;
 }
 
 .adCat:hover {
@@ -114,9 +117,53 @@ footer {
     background-image: url("img/bear.svg");
     background-repeat: no-repeat;
 }
+
+.books ul {
+    text-align: center;
+}
+
+.books li {
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.books figure {
+    vertical-align: top;
+}
+
+.books img {
+    width: 150px;
+    border: 1px solid #666;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+figcaption {
+    font: 0.87em Arial, Helvetica, sans-serif;
+}
 /* ------------------------------ */
 
 /* ---tasksJS--- */
+.TOC {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #403F38 ;
+    border-radius: 5px;
+    background-color: #f2f3f4;
+}
+.TOC .contents {
+    margin-bottom: 5px;
+}
+.TOC a {
+    text-decoration: none;
+    color: black;
+}
+.TOC a:hover,
+.TOC a:active {
+    color: #F21634;
+}
+
 hr {
     border: 0;
     border-bottom: 5px double #696969;
@@ -127,7 +174,7 @@ hr {
     margin: .5em 0 0 0;
     outline: none;
     font-weight: bold;
-    background-color: #f5f2f0;
+    background-color: #f2f3f4;
     border-bottom: none;
 }
 
@@ -135,8 +182,10 @@ hr {
     display: none;
 }
 
-.solution_button {
-    text-align: center;
+.button-play {
+    outline: none;
+    font-weight: bold;
+    background-color: #f2f3f4;
 }
 /* ------------------------------ */
 
@@ -144,25 +193,32 @@ hr {
 footer {
     height: 90px;
     background-color: #403F38;
+    text-align: right;
+    padding: 20px;
+}
+
+.footer a {
     color: white;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: 0.8;
+}
+.footer a:focus,
+.footer a:hover {
+    opacity: 1;
+    border-bottom: 1px solid #ffffff;
+}
+
+.footer-email {
+    margin-right: 20px;
+    padding: 3px 0 3px 30px ;
+    background-image: url("img/icon-email-footer.svg");
+}
+
+.footer-phone {
+    margin-right: 15px;
+    padding: 3px 0 3px 25px;
+    background-image: url("img/icon-phone-footer.svg");
 }
 /* ------------------------------ */
-
-/* ---SVG--- */
-
-/* ------------------------------ */
-
-/*
-nav a:link {
-    color: black;
-}
-nav a:visited {
-    color: black;
-}
-nav a:hover {
-    color: red;
-}
-nav a:active {
-    color: red;
-}
-*/
