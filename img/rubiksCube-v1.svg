@@ -2,6 +2,7 @@
 xmlns:xlink="http://www.w3.org/1999/xlink"  width="45" height="145" viewBox="0 0 90 290">
   <g class="rubiksCube">
   <title>rubiksCube</title>
+  <rect fill="none" height="90" id="svg_1" stroke="#000000" stroke-width="3" width="90"/>
   <rect fill="none" height="30" id="svg_3" stroke="#000000" stroke-width="3" width="30"/>
   <rect fill="none" height="30" id="svg_4" stroke="#000000" stroke-width="3" width="30" x="30" y="0"/>
   <rect fill="none" height="30" id="svg_5" stroke="#000000" stroke-width="3" width="30" x="60" y="0"/>
