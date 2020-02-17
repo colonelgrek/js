@@ -204,10 +204,32 @@ footer {
     background-position: left;
     opacity: 0.8;
 }
-.footer a:focus,
-.footer a:hover {
+
+.footer-email:focus,
+.footer-email:hover,
+.footer-phonel:focus,
+.footer-phone:hover {
     opacity: 1;
     border-bottom: 1px solid #ffffff;
+}
+
+.footer-vk:focus,
+.footer-vk:hover,
+.footer-facebook:focus,
+.footer-facebook:hover {
+    opacity: 1;
+}
+
+.footer-facebook {
+    margin-right: 20px;
+    padding: 3px 0 3px 20px ;
+    background-image: url("img/icon-facebook-footer.svg");
+}
+
+.footer-vk {
+    margin-right: 20px;
+    padding: 3px 0 3px 30px ;
+    background-image: url("img/icon-vk-footer.svg");
 }
 
 .footer-email {
