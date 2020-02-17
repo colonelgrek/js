@@ -1,25 +1,25 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink"  width="45" height="145" viewBox="0 0 90 290">
-  <g class="rubiksCube">
-  <title>rubiksCube</title>
-  <rect fill="none" height="90" id="svg_1" stroke="#000000" stroke-width="3" width="90"/>
-  <rect fill="none" height="30" id="svg_3" stroke="#000000" stroke-width="3" width="30"/>
-  <rect fill="none" height="30" id="svg_4" stroke="#000000" stroke-width="3" width="30" x="30" y="0"/>
-  <rect fill="none" height="30" id="svg_5" stroke="#000000" stroke-width="3" width="30" x="60" y="0"/>
-  <rect fill="none" height="30" id="svg_6" stroke="#000000" stroke-width="3" width="30" x="0" y="30"/>
-  <rect fill="none" height="30" id="svg_7" stroke="#000000" stroke-width="3" width="30" x="30" y="30"/>
-  <rect fill="none" height="30" id="svg_8" stroke="#000000" stroke-width="3" width="30" x="60" y="30"/>
-  <rect fill="none" height="30" id="svg_9" stroke="#000000" stroke-width="3" width="30" x="0" y="60"/>
-  <rect fill="none" height="30" id="svg_10" stroke="#000000" stroke-width="3" width="30" x="30" y="60"/>
-  <rect fill="none" height="30" id="svg_11" stroke="#000000" stroke-width="3" width="30" x="60" y="60"/>
-  <rect fill="#0E64D0" height="30" id="svg_20" stroke="#000000" stroke-width="2" width="30" x="0" y="200"/>
-  <rect fill="#FFFE01" height="30" id="svg_19" stroke="#000000" stroke-width="2" width="30" x="30" y="200"/>
-  <rect fill="#F21634" height="30" id="svg_18" stroke="#000000" stroke-width="2" width="30" x="60" y="200"/>
-  <rect fill="#F21634" height="30" id="svg_17" stroke="#000000" stroke-width="2" width="30" x="0" y="230"/>
-  <rect fill="#01C117" height="30" id="svg_16" stroke="#000000" stroke-width="2" width="30" x="30" y="230"/>
-  <rect fill="#0E64D0" height="30" id="svg_15" stroke="#000000" stroke-width="2" width="30" x="60" y="230"/>
-  <rect fill="#0E64D0" height="30" id="svg_14" stroke="#000000" stroke-width="2" width="30" x="0" y="260"/>
-  <rect fill="#FFFE01" height="30" id="svg_13" stroke="#000000" stroke-width="2" width="30" x="30" y="260"/>
-  <rect fill="#DF6F1D" height="30" id="svg_12" stroke="#000000" stroke-width="2" width="30" x="60" y="260"/>
+xmlns:xlink="http://www.w3.org/1999/xlink"  width="51" height="148" viewBox="0 0 92 296">
+  <g class="rubiksCube" transform="translate(3, 3)">
+    <title>rubiksCube</title>
+    <rect fill="none" height="90" id="svg_1" stroke="#000000" stroke-width="3" width="90"/>
+    <rect fill="none" height="30" id="svg_3" stroke="#000000" stroke-width="3" width="30"/>
+    <rect fill="none" height="30" id="svg_4" stroke="#000000" stroke-width="3" width="30" x="30" y="0"/>
+    <rect fill="none" height="30" id="svg_5" stroke="#000000" stroke-width="3" width="30" x="60" y="0"/>
+    <rect fill="none" height="30" id="svg_6" stroke="#000000" stroke-width="3" width="30" x="0" y="30"/>
+    <rect fill="none" height="30" id="svg_7" stroke="#000000" stroke-width="3" width="30" x="30" y="30"/>
+    <rect fill="none" height="30" id="svg_8" stroke="#000000" stroke-width="3" width="30" x="60" y="30"/>
+    <rect fill="none" height="30" id="svg_9" stroke="#000000" stroke-width="3" width="30" x="0" y="60"/>
+    <rect fill="none" height="30" id="svg_10" stroke="#000000" stroke-width="3" width="30" x="30" y="60"/>
+    <rect fill="none" height="30" id="svg_11" stroke="#000000" stroke-width="3" width="30" x="60" y="60"/>
+    <rect fill="#0E64D0" height="30" id="svg_20" stroke="#000000" stroke-width="2" width="30" x="0" y="200"/>
+    <rect fill="#FFFE01" height="30" id="svg_19" stroke="#000000" stroke-width="2" width="30" x="30" y="200"/>
+    <rect fill="#F21634" height="30" id="svg_18" stroke="#000000" stroke-width="2" width="30" x="60" y="200"/>
+    <rect fill="#F21634" height="30" id="svg_17" stroke="#000000" stroke-width="2" width="30" x="0" y="230"/>
+    <rect fill="#01C117" height="30" id="svg_16" stroke="#000000" stroke-width="2" width="30" x="30" y="230"/>
+    <rect fill="#0E64D0" height="30" id="svg_15" stroke="#000000" stroke-width="2" width="30" x="60" y="230"/>
+    <rect fill="#0E64D0" height="30" id="svg_14" stroke="#000000" stroke-width="2" width="30" x="0" y="260"/>
+    <rect fill="#FFFE01" height="30" id="svg_13" stroke="#000000" stroke-width="2" width="30" x="30" y="260"/>
+    <rect fill="#DF6F1D" height="30" id="svg_12" stroke="#000000" stroke-width="2" width="30" x="60" y="260"/>
  </g>
 </svg>

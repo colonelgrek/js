@@ -1,20 +1,20 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink"  width="45" height="145" viewBox="0 0 90 290">
+xmlns:xlink="http://www.w3.org/1999/xlink"  width="51" height="148" viewBox="0 0 92 296">
   <g class="home">
-<title>smile</title>
-  <circle cx="45" cy="45" fill="none" id="svg_1" r="45" stroke="#000000" stroke-width="3"/>
-  <circle cx="30" cy="35" fill="none" id="svg_2" r="10" stroke="#000000" stroke-width="3"/>
-  <circle cx="60" cy="32" fill="none" id="svg_3" r="13" stroke="#000000" stroke-width="3"/>
-  <circle cx="30" cy="35" fill="none" id="svg_4" r="2" stroke="#000000" stroke-width="3"/>
-  <circle cx="59" cy="32" fill="none" id="svg_5" r="3" stroke="#000000" stroke-width="3"/>
-  <line fill="none" id="svg_6" stroke="#000000" stroke-width="3" x1="40" x2="50" y1="70" y2="70"/>
-  <circle cx="45" cy="245" fill="#FFFE01" id="svg_12" r="45" stroke="#000000" stroke-width="2"/>
-  <circle cx="30" cy="235" fill="white" id="svg_11" r="10" stroke="#000000" stroke-width="2"/>
-  <circle cx="60" cy="232" fill="white" id="svg_10" r="13" stroke="#000000" stroke-width="2"/>
-  <circle cx="30" cy="235" fill="#0E64D0" id="svg_9" r="2" stroke="#000000" stroke-width="2"/>
-  <circle cx="59" cy="232" fill="#0E64D0" id="svg_8" r="3" stroke="#000000" stroke-width="2"/>
-  <line fill="none" fill-opacity="0" id="svg_7" stroke="#000000" stroke-width="2" x1="39.86667" x2="49.86667" y1="270.11667" y2="270.11667"/>
-  <line fill="none" fill-opacity="0" id="svg_13" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="49.60833" x2="54.85833" y1="269.94165" y2="266.94165"/>
-  <line fill="none" fill-opacity="0" id="svg_14" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="39.85833" x2="34.60833" y1="269.94165" y2="265.94165"/>
+    <title>smile</title>
+    <circle cx="48" cy="48" fill="none" id="svg_1" r="45" stroke="#000000" stroke-width="3"/>
+    <circle cx="30" cy="35" fill="none" id="svg_2" r="10" stroke="#000000" stroke-width="3"/>
+    <circle cx="60" cy="32" fill="none" id="svg_3" r="13" stroke="#000000" stroke-width="3"/>
+    <circle cx="30" cy="35" fill="none" id="svg_4" r="2" stroke="#000000" stroke-width="3"/>
+    <circle cx="59" cy="32" fill="none" id="svg_5" r="3" stroke="#000000" stroke-width="3"/>
+    <line fill="none" id="svg_6" stroke="#000000" stroke-width="3" x1="40" x2="50" y1="70" y2="70"/>
+    <circle cx="48" cy="248" fill="#FFFE01" id="svg_12" r="45" stroke="#000000" stroke-width="2"/>
+    <circle cx="30" cy="235" fill="white" id="svg_11" r="10" stroke="#000000" stroke-width="2"/>
+    <circle cx="60" cy="232" fill="white" id="svg_10" r="13" stroke="#000000" stroke-width="2"/>
+    <circle cx="30" cy="235" fill="#0E64D0" id="svg_9" r="2" stroke="#000000" stroke-width="2"/>
+    <circle cx="59" cy="232" fill="#0E64D0" id="svg_8" r="3" stroke="#000000" stroke-width="2"/>
+    <line fill="none" fill-opacity="0" id="svg_7" stroke="#000000" stroke-width="2" x1="39.86667" x2="49.86667" y1="270.11667" y2="270.11667"/>
+    <line fill="none" fill-opacity="0" id="svg_13" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="49.60833" x2="54.85833" y1="269.94165" y2="266.94165"/>
+    <line fill="none" fill-opacity="0" id="svg_14" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="39.85833" x2="34.60833" y1="269.94165" y2="265.94165"/>
  </g>
 </svg>
