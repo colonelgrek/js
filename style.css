@@ -82,7 +82,6 @@ header{
     background-image: url("img/smile-v1.svg");
 }
 /* ------------------------------ */
-
 /* ---main--- */
 .sidebar1 {
     float: left;
@@ -143,7 +142,6 @@ figcaption {
     font: 0.87em Arial, Helvetica, sans-serif;
 }
 /* ------------------------------ */
-
 /* ---tasksJS--- */
 .TOC {
     display: inline-block;
@@ -188,7 +186,46 @@ hr {
     background-color: #f2f3f4;
 }
 /* ------------------------------ */
+/* ---aboutMe--- */
+.aboutMe .containerRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.aboutMe .containerColumn {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutMe .education p {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+}
+
+.aboutMe h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 3em;
+}
+
+.aboutMe h1::before, .aboutMe h1::after {
+    flex-grow: 1;
+    content: "";
+    height: 2px;
+    background: black;
+}
+
+.aboutMe h2 {
+    font-size: 2em;
+    margin: 0;
+}
+/* ------------------------------ */
 /* ---footer--- */
 footer {
     height: 90px;
