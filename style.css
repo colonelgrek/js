@@ -47,7 +47,7 @@ header{
 
 .nav li {
     float: left;
-    width: 15%;
+    width: 10%;
     min-width: 90px;
 }
 
@@ -187,43 +187,55 @@ hr {
 }
 /* ------------------------------ */
 /* ---aboutMe--- */
-.aboutMe .containerRow {
+.aboutMe p,
+.aboutMe h1,
+.aboutMe h2 {
+        margin: 20px 10px;
+}
+
+.aboutMe .container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.aboutMe .containerColumn {
+.aboutMe .education {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.aboutMe .education p {
-    display: flex;
-    flex: 1 1;
-    align-items: center;
+    flex-flow: row wrap;
 }
 
 .aboutMe h1 {
     display: flex;
-    justify-content: center;
     width: 100%;
-    font-size: 3em;
+    font-size: 2.5em;
+    align-items: center;
 }
 
 .aboutMe h1::before, .aboutMe h1::after {
     flex-grow: 1;
     content: "";
-    height: 2px;
-    background: black;
+    border-bottom: 4px double black;
+}
+
+.education p:nth-child(2) {
+    display: flex;
+    flex: 2 1;
+    flex-flow: row wrap;
+}
+.education p:nth-of-type(n+2) {
+    display: flex;
+    flex: 1 1;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutMe h2 {
     font-size: 2em;
-    margin: 0;
 }
 /* ------------------------------ */
 /* ---footer--- */
