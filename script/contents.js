@@ -1,6 +1,6 @@
 'use strict'
 let headings = document.querySelectorAll('h2');
-for(let i = 1, len=headings.length; i < len; i++) {
+for(let i = 0, len=headings.length; i < len; i++) {
     let heading = headings[i];
     heading.id = 'TOC'+i;
     let link = document.createElement('a');
