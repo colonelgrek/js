@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -7,7 +6,8 @@ body {
     font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2em;
-    background-color: #f8f4f0;
+    /* background-color: #f8f4f0; */
+    background-color: #e0dbc5;
 }
 
 .nav, .wrap, .footer{
@@ -19,6 +19,7 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0.33em;
 }
+
 h2 {
     font-size: 1.17em;
     margin: 0.83em 0.33em;
@@ -32,47 +33,48 @@ p {
     list-style: none;
     margin-bottom: 15px;
     padding-left: 20px;
-    border-left: 10px solid #0E64D0;
+    border-left: 10px solid #f3cc5a;
 }
 
 .contents:nth-child(even) {
-    border-left: 10px solid #2e8b57;
+    border-left: 10px solid #1c9675;
 }
 
 /* ---header--- */
 header{
-    height: 90px;
-    background-color: #bfbfbf;
+    height: 50px;
+    background-color: #1c9675;
 }
 
 .nav li {
     float: left;
-    width: 10%;
-    min-width: 90px;
+    width: 14%;
+    min-width: 130px;
 }
 
 .nav a {
     display: block;
-    height: 90px;
+    height: 50px;
+    padding: 13px 0;
     text-align: center;
     text-decoration: none;
-    color: black;
-    font-size: 1.2em;
+    color: white;
+    font-size: 1.3em;
     background-repeat: no-repeat;
-    background-color: #bfbfbf;
-    background-position: center 30px;
+    background-color: #1c9675;
+    /* background-position: left 13px; */
 }
 
 .main .iconHome,
 .tasksJS .iconRubiksCube,
 .aboutMe .iconSmile,
 .nav a:hover {
-    background-position: center -70px;
-    background-color: #403F38;
-    color: white;
+    /* background-position: left -37px; */
+    background-color: #e0dbc5;
+    color: black;
 }
 
-.iconHome {
+/* .iconHome {
     background-image: url("img/home-v1.svg");
 }
 .iconRubiksCube {
@@ -80,6 +82,12 @@ header{
 }
 .iconSmile {
     background-image: url("img/smile-v1.svg");
+} */
+
+.main .wrap,
+.tasksJS .wrap,
+.aboutMe .wrap {
+    clear: both;
 }
 /* ------------------------------ */
 /* ---main--- */
@@ -104,7 +112,7 @@ footer {
 }
 
 .endSection {
-    border-bottom: 2px solid #2f4f4f;
+    border-bottom: 2px solid #1c9675;
 }
 
 .adCat:hover {
@@ -146,7 +154,7 @@ figcaption {
 .TOC {
     display: inline-block;
     padding: 5px;
-    border: 1px solid #403F38 ;
+    border: 1px solid #3b3b3b ;
     border-radius: 5px;
     background-color: #f2f3f4;
 }
@@ -164,7 +172,7 @@ figcaption {
 
 hr {
     border: 0;
-    border-bottom: 5px double #696969;
+    border-bottom: 5px double #666;
 }
 
 .button-solution {
@@ -190,7 +198,23 @@ hr {
 .aboutMe p,
 .aboutMe h1,
 .aboutMe h2 {
-        margin: 20px 10px;
+    margin: 20px 10px;
+}
+
+.aboutMe h2 {
+    font-size: 2em;
+}
+
+.aboutMe h2 {
+    display: flex;
+    width: 100%;
+    font-size: 2.5em;
+    align-items: center;
+}
+.aboutMe h2::before, .aboutMe h2::after {
+    flex-grow: 1;
+    content: "";
+    border-bottom: 4px double black;
 }
 
 .aboutMe .container {
@@ -203,19 +227,6 @@ hr {
 .aboutMe .education {
     display: flex;
     flex-flow: row wrap;
-}
-
-.aboutMe h1 {
-    display: flex;
-    width: 100%;
-    font-size: 2.5em;
-    align-items: center;
-}
-
-.aboutMe h1::before, .aboutMe h1::after {
-    flex-grow: 1;
-    content: "";
-    border-bottom: 4px double black;
 }
 
 .education p:nth-child(2) {
@@ -234,14 +245,37 @@ hr {
     align-items: center;
 }
 
-.aboutMe h2 {
-    font-size: 2em;
+.aboutMe .wrap ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
+
+.aboutMe .wrap li {
+    flex: 1 1 135px;
+    border: 1px solid #3b3b3b ;
+    border-radius: 5px;
+    background-color: #f2f3f4;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.aboutMe .wrap a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.aboutMe .wrap a:hover,
+.aboutMe .wrap a:active {
+    color: #F21634;
+}
+
 /* ------------------------------ */
 /* ---footer--- */
 footer {
     height: 90px;
-    background-color: #403F38;
+    background-color: #1c9675;
     text-align: right;
     padding: 20px;
 }
