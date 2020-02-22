@@ -255,7 +255,9 @@ hr {
     flex: 1 1 135px;
     border: 1px solid #3b3b3b ;
     border-radius: 5px;
-    background-color: #f2f3f4;
+    /* background-color: #f2f3f4; */
+    background-color: #336b87;
+    color: white;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -263,14 +265,45 @@ hr {
 
 .aboutMe .wrap a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: center;
 }
 .aboutMe .wrap a:hover,
 .aboutMe .wrap a:active {
-    color: #F21634;
+    color: black;
 }
 
+.im img {
+    background-color: #FFF;
+    padding: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.button-visibility {
+    /* padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent; */
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background-image: url('img/right-arrow.svg');
+    /* background-image: url('img/next.svg'); */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.button-visibility:active, .button-visibility:focus {
+    outline: none ;
+}
+/* .button-visibility .visibile {
+
+} */
 /* ------------------------------ */
 /* ---footer--- */
 footer {
