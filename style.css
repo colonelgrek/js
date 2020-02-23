@@ -293,7 +293,6 @@ hr {
     width:30px;
     border-radius: 50%;
     background-image: url('img/right-arrow.svg');
-    /* background-image: url('img/next.svg'); */
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -301,9 +300,30 @@ hr {
 .button-visibility:active, .button-visibility:focus {
     outline: none ;
 }
-/* .button-visibility .visibile {
+.overlay img {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-} */
+.overlay {
+    display: none;
+}
+
+.overlay:target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* ------------------------------ */
 /* ---footer--- */
 footer {
