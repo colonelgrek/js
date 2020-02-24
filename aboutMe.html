@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>sandbox || petProject || about me</title>
     <link rel="stylesheet" href="themes/resetCSS.css">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body class="aboutMe">
 <header>
@@ -26,55 +26,53 @@
     <nav>
         <ul></ul>
     </nav>
-        <div class="overlay" id="largePic">
-            <a href="#">
-                <img src="img/admin-m.JPG" width="504"/>
-            </a>
-        </div>
-    <div class="container">
-        <a href="#largePic">
-            <figure class="im">
-                <img src="img/admin-m.JPG" width="300" alt="Фотография кандидата на вакансию">
-            </figure>
+    <div class="overlay" id="largePic">
+        <a href="#">
+            <img src="img/user.JPG" width="500"/>
         </a>
-        <div>
-            <h1>Греков Сергей</h1>
-            <p>33 года</p>
-            <button class="button-visibility" type="button" onclick="nextElementSibling.classList.toggle('hidden')"></button>
-            <div  class="hidden">
-                <p>Женат</p>
-                <p>Живу в Санкт-Петербурге и переезжать не планирую :)</p>
+    </div>
+    <div class="mainBox">
+        <div class="box1">
+            <a href="#largePic">
+                <figure class="im">
+                    <img src="img/user.JPG" alt="Фотография кандидата на вакансию">
+                </figure>
+            </a>
+            <div class="myName">
+                <h1>Греков Сергей</h1>
+                <p>33 года</p>
+                <button class="button-visibility" type="button" onclick="nextElementSibling.classList.toggle('hidden')"></button>
+                <div  class="hidden">
+                    <p>Женат</p>
+                    <p>Живу в Санкт-Петербурге и переезжать не планирую :)</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="education">
-        <h2>ОБРАЗОВАНИЕ</h2>
-        <p>Балтийский Государственный Технический Университет «ВОЕНМЕХ» им.Д.Ф.Устинова</p>
-        <p>Специальность: Лазерные системы</p>
-    </div>
-    <h2>НАВЫКИ</h2>
-    <div class="skills">
-        <img src="img\js.svg" alt="JS" class="js" height="120px">
-        <img src="img\html-5.svg" alt="HTML" class="html" height="100px">
-        <img src="img\css-3.svg" alt="CSS" class="css" height="100px">
-    </div>
-    <div class="container">
-        <h2>ОПЫТ РАБОТЫ</h2>
-        <div>
-            <p>Ведущий инженер-конструктор</p>
-            <p> Июнь 2011 - настоящее время (8 лет 9 месяцев)</p>
-            <p>Электротяжмаш - Привод</p>
+        <div class="box2">
+            <div class="education">
+                <h2>ОБРАЗОВАНИЕ</h2>
+                <p>Балтийский Государственный Технический Университет «ВОЕНМЕХ» им.Д.Ф.Устинова</p>
+                <p>Специальность: Лазерные системы</p>
+            </div>
+            <div class="skills">
+                <h2>НАВЫКИ</h2>
+                <img src="img\triangle.svg" alt="JS" class="js">
+            </div>
         </div>
-        <div>
-            <p>Инженер-конструктор</p>
-            <p> Июль 2009 - Май 2011 (1 год 11 месяцев)</p>
-            <p>Силовые машины - Электросила</p>
+        <div class="box3">
+            <div class="container">
+                <h2>ОПЫТ РАБОТЫ</h2>
+                <div>
+                    <p>Ведущий инженер-конструктор</p>
+                    <p> Июль 2009 - настоящее время (10 лет 8 месяцев)</p>
+                    <p>Электротяжмаш - Привод &lt;- Силовые машины - Электросила</p>
+                </div>
+            </div>
+            <div class="container">
+                <h2>ОБО МНЕ</h2>
+                <p>В прошлом году я решил сменить свою сферу деятельности и стать фронтенд разработчиком для чего и начал изучать JavaScript, HTML и CSS.</p>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <h2>ОБО МНЕ</h2>
-        <p>В прошлом году я решил сменить свою сферу деятельности и стать фронтенд разработчиком для чего и начал изучать JavaScript, HTML и CSS.</p>
-
     </div>
 </main>
 <script src="script/contents.js"></script>

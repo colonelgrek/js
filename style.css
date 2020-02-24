@@ -6,8 +6,6 @@ body {
     font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2em;
-    /* background-color: #f8f4f0; */
-    background-color: #e0dbc5;
 }
 
 .nav, .wrap, .footer{
@@ -17,12 +15,14 @@ body {
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0.33em;
+    line-height: 1.2em;
+    margin: 0.67em 0;
 }
 
 h2 {
     font-size: 1.17em;
-    margin: 0.83em 0.33em;
+    line-height: 1.2em;
+    margin: 0.83em 0;
 }
 
 p {
@@ -43,13 +43,14 @@ p {
 /* ---header--- */
 header{
     height: 50px;
-    background-color: #1c9675;
+
 }
 
 .nav li {
     float: left;
     width: 14%;
     min-width: 130px;
+
 }
 
 .nav a {
@@ -58,31 +59,17 @@ header{
     padding: 13px 0;
     text-align: center;
     text-decoration: none;
-    color: white;
     font-size: 1.3em;
-    background-repeat: no-repeat;
-    background-color: #1c9675;
-    /* background-position: left 13px; */
+    color: black;
 }
 
 .main .iconHome,
 .tasksJS .iconRubiksCube,
 .aboutMe .iconSmile,
 .nav a:hover {
-    /* background-position: left -37px; */
-    background-color: #e0dbc5;
+    border-bottom: 2px solid black;
     color: black;
 }
-
-/* .iconHome {
-    background-image: url("img/home-v1.svg");
-}
-.iconRubiksCube {
-    background-image: url("img/rubiksCube-v1.svg");
-}
-.iconSmile {
-    background-image: url("img/smile-v1.svg");
-} */
 
 .main .wrap,
 .tasksJS .wrap,
@@ -195,54 +182,59 @@ hr {
 }
 /* ------------------------------ */
 /* ---aboutMe--- */
-.aboutMe p,
-.aboutMe h1,
-.aboutMe h2 {
-    margin: 20px 10px;
-}
-
-.aboutMe h2 {
-    font-size: 2em;
-}
-
-.aboutMe h2 {
-    display: flex;
-    width: 100%;
-    font-size: 2.5em;
-    align-items: center;
-}
-.aboutMe h2::before, .aboutMe h2::after {
-    flex-grow: 1;
-    content: "";
-    border-bottom: 4px double black;
-}
-
-.aboutMe .container {
+.mainBox{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
-.aboutMe .education {
-    display: flex;
-    flex-flow: row wrap;
+.box1,
+.box2,
+.box3 {
+    flex: 1;
+    margin: 30px;
 }
 
-.education p:nth-child(2) {
-    display: flex;
-    flex: 2 1;
-    flex-flow: row wrap;
-}
-.education p:nth-of-type(n+2) {
-    display: flex;
-    flex: 1 1;
+.myName {
+    padding: 10px 20px;
+    position: relative;
 }
 
-.skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.myName::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("img/conerLeft.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+}
+
+.myName::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("img/conerLeft.svg");
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 26px;
+    height: 26px;
+}
+
+.box1 {
+    text-align: right;
+}
+
+.box2 {
+    text-align: center;
+}
+
+.box2 img{
+    display: block;
+    margin:auto;
 }
 
 .aboutMe .wrap ul {
@@ -255,7 +247,6 @@ hr {
     flex: 1 1 135px;
     border: 1px solid #3b3b3b ;
     border-radius: 5px;
-    /* background-color: #f2f3f4; */
     background-color: #336b87;
     color: white;
     padding: 10px;
@@ -274,21 +265,24 @@ hr {
 }
 
 .im img {
+    display: block;
+    margin-left: auto;
+    width: 150px;
     background-color: #FFF;
-    padding: 4px;
-    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    border-radius: 750px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.5);
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .button-visibility {
-    /* padding: 0;
+    padding: 0;
     border: none;
     font: inherit;
     color: inherit;
-    background-color: transparent; */
+    background-color: transparent;
     height:30px;
     width:30px;
     border-radius: 50%;
@@ -300,6 +294,7 @@ hr {
 .button-visibility:active, .button-visibility:focus {
     outline: none ;
 }
+
 .overlay img {
     background-color: white;
     padding: 10px;
@@ -328,7 +323,7 @@ hr {
 /* ---footer--- */
 footer {
     height: 90px;
-    background-color: #1c9675;
+    background-color: #336b87;
     text-align: right;
     padding: 20px;
 }
