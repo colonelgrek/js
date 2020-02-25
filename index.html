@@ -27,7 +27,7 @@
     <div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 480" class="adCat">
             <title>advertisement</title>
-            <g>
+            <g id="svg_111">
                 <circle cx="521" cy="180" fill="#ffffff" id="svg_1" r="44" stroke="#000000" stroke-width="5"/>
                 <circle cx="453" cy="180" fill="#ffffff" id="svg_2" r="44" stroke="#000000" stroke-width="5"/>
                 <circle cx="528" cy="180" id="svg_3" r="12" stroke="#000000" stroke-width="5"/>
@@ -37,7 +37,7 @@
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 480">
             <title>advertisement</title>
             <g>
-                <text fill="#000000" font-family="Cursive" font-size="24" id="svg_1" stroke="#000000" stroke-width="0" text-anchor="middle" transform="rotate(-72.6498 91.4177 241.686) matrix(2.40856 0 0 2.66995 64.5471 -548.472)" x="10.54059" xml:space="preserve" y="305.61144">ADVERTISMENT</text>
+                <text fill="#000000" font-family="Cursive" font-size="24" stroke="#000000" stroke-width="0" text-anchor="middle" transform="rotate(-72.6498 91.4177 241.686) matrix(2.40856 0 0 2.66995 64.5471 -548.472)" x="10.54059" xml:space="preserve" y="305.61144">ADVERTISMENT</text>
             </g>
         </svg>
     </div>
@@ -69,7 +69,7 @@
             <ul>
                 <li>
                     <figure>
-                        <img src="img/roundabout/David Flanagan JS The Definitive Guide.jpg" alt="Дэвид Флэнаган JavaScript Подробное руководство">
+                        <img src="img/roundabout/DavidFlanaganJSTheDefinitiveGuide.jpg" alt="Дэвид Флэнаган JavaScript Подробное руководство">
                         <figcaption>
                             <p>
                                 <a href="https://www.oreilly.com/library/view/javascript-the-definitive/9781449393854/" title="www.oreilly.com">Дэвид Флэнаган JavaScript. Подробное руководство</a>
@@ -79,7 +79,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="img/roundabout/David McFarland CSS The Missing Manual.jpg" alt="Дэвид Макфарланд Новая большая книга CSS">
+                        <img src="img/roundabout/DavidMcFarlandCSSTheMissingManual.jpg" alt="Дэвид Макфарланд Новая большая книга CSS">
                         <figcaption>
                             <p>
                                 <a href="https://www.oreilly.com/library/view/css-the-missing/9781491918043/" title="www.oreilly.com">Дэвид Макфарланд Новая большая книга CSS</a>
@@ -89,7 +89,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="img/roundabout/Bhargava grokking algorithms.png" alt="Бхаргава Адитья Грокаем алгоритмы">
+                        <img src="img/roundabout/BhargavaGrokkingAlgorithms.png" alt="Бхаргава Адитья Грокаем алгоритмы">
                         <figcaption>
                             <p>
                                 <a href="https://www.manning.com/books/grokking-algorithms" title="www.manning.com">Бхаргава Адитья Грокаем алгоритмы</a>
@@ -99,7 +99,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="img/roundabout/Marijn Haverbeke Eloquent JS.png" alt="Хавербеке Марейн Выразительный JavaScript">
+                        <img src="img/roundabout/MarijnHaverbekeEloquentJS.png" alt="Хавербеке Марейн Выразительный JavaScript">
                         <figcaption>
                             <p>
                                 <a href="https://eloquentjavascript.net/" title="eloquentjavascript.net">Хавербеке Марейн Выразительный JavaScript</a>
@@ -109,7 +109,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="img/roundabout/learn javascript.png" alt="learn javascript">
+                        <img src="img/roundabout/learnJavascript.png" alt="learn javascript">
                         <figcaption>
                             <p>
                                 <a href="https://learn.javascript.ru/" title="learn.javascript.ru">learn javascript (интернет учебник)</a>
@@ -135,7 +135,7 @@
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 420">
                 <title>advertisement</title>
                 <g>
-                    <text fill="#000000" font-family="Courier" font-size="24" id="svg_1" stroke="#000000" stroke-width="0" text-anchor="middle" transform="rotate(-90 50.9392 209.147) matrix(2.39369 0 0 2.66995 65.9519 -548.472)" x="-6.2721" xml:space="preserve" y="290.06577">ADVERTISMENT</text>
+                    <text fill="#000000" font-family="Courier" font-size="24" stroke="#000000" stroke-width="0" text-anchor="middle" transform="rotate(-90 50.9392 209.147) matrix(2.39369 0 0 2.66995 65.9519 -548.472)" x="-6.2721" xml:space="preserve" y="290.06577">ADVERTISMENT</text>
                 </g>
             </svg>
         </div>
@@ -149,5 +149,38 @@
         <a class="footer-phone" href="tel:+79110079403">+7 911 007 94 03</a>
     </div>
 </footer>
+<script>
+    function getCoordsRelative(elemRelative) {
+        let box = elemRelative.getBoundingClientRect();
+        return {
+            left: box.left + pageXOffset,
+            top: box.top + pageYOffset,
+            xCenter: box.left + (box.width/2) + pageXOffset,
+            yCenter: box.top + (box.height/2) + pageYOffset,
+                };
+    }
+    console.log ('hi');
+    let a = document.getElementById('svg_4');
+    console.log ( a );
+    console.log (getCoordsRelative(a));
+    let b = document.getElementById('svg_1');
+    document.addEventListener('mousemove', function(event) {
+        let xp = event.pageX;
+        let yp = event.pageY;
+        let coords = getCoordsRelative(a);
+        let coords2 = b.getBoundingClientRect();
+        let coeff = coords2.width;
+        console.log (coords2.width);
+        let sinAlf = (Math.abs(xp-coords.xCenter)) / (Math.sqrt((xp-coords.xCenter)**2+(yp-coords.yCenter)**2));
+        let x1;
+        let y1;
+        x1 = coeff * sinAlf;
+        y1 = coeff * Math.cos(Math.asin(sinAlf));
+        if (coords.xCenter > xp) x1 = -x1;
+        if (coords.yCenter > yp) y1 = -y1;
+        a.style.transform = 'translate(' + x1 + 'px , ' + y1 + 'px)';
+    });
+
+</script>
 </body>
 </html>
