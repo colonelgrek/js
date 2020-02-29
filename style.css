@@ -318,11 +318,17 @@ hr {
     /* overflow: auto; */
     background-color: rgba(0, 0, 0, 0.8);
 }
-.aboutMe footer{
+
+.aboutMe footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.aboutMe {
+    background-image: url("img/spb1971eng2.png");
+    background-position: center center;
 }
 /* ------------------------------ */
 /* ---footer--- */
