@@ -263,6 +263,9 @@ hr {
 .aboutMe .wrap a:active {
     color: black;
 }
+.aboutMe .container a {
+    color: black;
+}
 
 .im img {
     display: block;
