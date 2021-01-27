@@ -19,15 +19,25 @@
 <header>
     <nav>
         <ul class="nav">
-            <li>
-                <a href="index.html" class="iconHome">Главная</a>
-            </li>
-            <li>
-                <a href="tasksJS.html" class="iconRubiksCube">Задачи</a>
-            </li>
-            <li>
-                <a href="aboutMe.html" class="iconSmile">Обо мне</a>
-            </li>
+            <ul class="nav">
+                <li>
+                    <a href="index.html" class="iconHome">Главная</a>
+                </li>
+                <li>
+                    <a href="tasksJS.html" class="iconRubiksCube">Задачи</a>
+                </li>
+                <li>
+                    <a href="aboutMe.html" class="iconSmile">Обо мне</a>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="https://colonelgrek.github.io/gb_html-css_1/index.html"
+                                class="header__geekbrains" title="откроется в новой вкладке" target = "_blanck">GeekBrains</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </ul>
     </nav>
 </header>
@@ -56,7 +66,7 @@ if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
     if (palindrome == emordnilap) alert ('Число ' + palindrome + ' является палиндром.');
     else alert ('Число ' + palindrome + ' не является палиндром.');
 }        </code></pre>
-    <hr>
+    <hr class = "tasks__horizontalline">
     </div>
     <div>
         <h2>Считаем бобы</h2>
@@ -81,7 +91,7 @@ let count = 0;
 countBs( stringBase, char );
 alert ('В строке: "' + stringBase + '" ' + count + ' символов "' + char+ '"');        </code></pre>
     </div>
-    <hr>
+    <hr class = "tasks__horizontalline">
     <div>
         <h2>Простые числа</h2>
         <p>Написать программу вывода всех простых чисел из интервала от 2 до n (n вводит пользователь).</p>
@@ -105,7 +115,7 @@ if ( !( +number != +number ) && number >= 2){
     primeNumber.substring(0, primeNumber.length-2));
 } else { alert ( 'Следует вводить только числа от 2 до n!' ); }        </code></pre>
     </div>
-    <hr>
+    <hr class = "tasks__horizontalline">
     <div>
         <h2>«FizzBuzz»</h2>
         <p>Написать программу, которая выводит на экран числа от 1 до 100.
@@ -131,7 +141,7 @@ for (let index = 1; index <= 100; index++) {
 
 alert(result);        </code></pre>
     </div>
-    <hr>
+    <hr class = "tasks__horizontalline">
     <div>
         <h2>Функция min(a, b)</h2>
         <p>Написать программу вывода меньшего из двух чисел. Числа вводит пользователь.</p>
@@ -149,7 +159,7 @@ if ( !isNaN(number1) && !isNaN(number2) ) {
     alert ( min(number1, number2) );
 } else alert ( 'Следует вводить только числа!' );        </code></pre>
     </div>
-    <hr>
+    <hr class = "tasks__horizontalline">
     <div>
         <h2>Функция power(x, n)</h2>
         <p>Написать программу возведения числа х в степень n (без использования оператора "**"). n может принимать только натуральные значения.</p>

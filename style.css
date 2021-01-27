@@ -29,15 +29,19 @@ p {
     margin: 1em 0;
 }
 
-.contents {
+.block {
     list-style: none;
     margin-bottom: 15px;
     padding-left: 20px;
     border-left: 10px solid #f3cc5a;
 }
 
-.contents:nth-child(even) {
+.block:nth-child(even) {
     border-left: 10px solid #1c9675;
+}
+
+.blocks:last-child {
+    border-bottom: 2px solid #1c9675;
 }
 
 /* ---header--- */
@@ -98,9 +102,9 @@ footer {
     clear: both;
 }
 
-.endSection {
+/* .endSection {
     border-bottom: 2px solid #1c9675;
-}
+} */
 
 .adCat:hover {
     background-image: url("img/cat.svg");
@@ -157,7 +161,7 @@ figcaption {
     color: #F21634;
 }
 
-hr {
+.tasks__horizontalline {
     border: 0;
     border-bottom: 5px double #666;
 }
@@ -322,13 +326,6 @@ hr {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.aboutMe footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .aboutMe {
     background-image: url("img/spb1971eng2.png");
     background-position: 50% -300px;
@@ -336,7 +333,7 @@ hr {
 /* ------------------------------ */
 /* ---footer--- */
 footer {
-    height: 90px;
+    min-height: 90px;
     background-color: #336b87;
     text-align: right;
     padding: 20px;
@@ -389,3 +386,12 @@ footer {
     background-image: url("img/icon-phone-footer.svg");
 }
 /* ------------------------------ */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    flex-grow: 1;
+}
