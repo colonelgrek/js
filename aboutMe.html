@@ -55,7 +55,7 @@
                         </a>
                         <div class="myName">
                             <h1>Греков Сергей</h1>
-                            <p>33 года</p>
+                            <p class="age" >33 года</p>
                             <button class="button-visibility" type="button"
                                 onclick="nextElementSibling.classList.toggle('hidden')"></button>
                             <div class="hidden">
@@ -82,10 +82,9 @@
                     <div class="box3">
                         <div class="container">
                             <h2>ОПЫТ РАБОТЫ</h2>
-
                             <div>
                                 <p>Ведущий инженер-конструктор</p>
-                                <p> Июль 2009 - настоящее время (10 лет 8 месяцев)</p>
+                                <p> Июль 2009 - настоящее время (<span  class="experience">10 лет 8 месяцев</span>)</p>
                                 <p>Электротяжмаш - Привод &lt;- Силовые машины - Электросила</p>
                             </div>
                         </div>
@@ -102,7 +101,6 @@
                     </div>
                 </div>
             </main>
-            <script src="script/contents.js"></script>
         </div>
         <footer>
             <div class="footer">
@@ -113,6 +111,8 @@
             </div>
         </footer>
     </div>
+    <script src="script/contents.js"></script>
+    <script src="script/countTime.js"></script>
 </body>
 
 </html>
