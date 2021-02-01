@@ -102,10 +102,6 @@ footer {
     clear: both;
 }
 
-/* .endSection {
-    border-bottom: 2px solid #1c9675;
-} */
-
 .adCat:hover {
     background-image: url("img/cat.svg");
     background-repeat: no-repeat;
@@ -322,7 +318,6 @@ figcaption {
     right: 0;
     left: 0;
     z-index: 999;
-    /* overflow: auto; */
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -385,7 +380,7 @@ footer {
     padding: 3px 0 3px 25px;
     background-image: url("img/icon-phone-footer.svg");
 }
-/* ------------------------------ */
+/* stick footer */
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -395,3 +390,29 @@ footer {
 .top {
     flex-grow: 1;
 }
+/* up-button */
+.up-button {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 1;
+
+    display: none;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+
+    font-size: 36px;
+    color: #336b87;
+
+    background-color: white;
+    border: 4px solid;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+
+.up-button__shown {
+    display: inline-block;
+}
+/* ------------------------------ */
