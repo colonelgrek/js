@@ -2,119 +2,145 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Моё резюме. Готов работать и развиваться в вашей компании! Жду Ваших звонков ☎+7(911)0079403" />
-    <title>sandbox | petProject | about me</title>
-    <link rel="stylesheet" href="themes/resetCSS.css">
-    <link rel="stylesheet" href="style.css?v=4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Моё резюме. Готов работать и развиваться в вашей компании! Жду Ваших звонков ☎+7(911)0079403" />
+  <title>sandbox | petProject | about me</title>
+  <link rel="stylesheet" href="themes/resetCSS.css">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 
 <body class="aboutMe">
-    <div class="wrapper">
-        <div class="top">
-            <header>
-                <nav>
-                    <ul class="nav">
-                        <li>
-                            <a href="index.html" class="iconHome">Главная</a>
-                        </li>
-                        <li>
-                            <a href="tasksJS.html" class="iconRubiksCube">Задачи</a>
-                        </li>
-                        <li>
-                            <a href="aboutMe.html" class="iconSmile">Обо мне</a>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>
-                                    <a href="https://colonelgrek.github.io/gb-html-css-1/index.html"
-                                        class="header__geekbrains" title="откроется в новой вкладке" target = "_blanck">GeekBrains</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="wrap">
-                <nav>
-                    <ul></ul>
-                </nav>
-                <div class="overlay" id="largePic">
-                    <a href="#">
-                        <img src="img/user.jpg" width="500" alt="Фотография кандидата на вакансию" />
-                    </a>
-                </div>
-                <div class="mainBox">
-                    <div class="box1">
-                        <a href="#largePic">
-                            <figure class="im">
-                                <img src="img/user.jpg" alt="Фотография кандидата на вакансию">
-                            </figure>
-                        </a>
-                        <div class="myName">
-                            <h1>Греков Сергей</h1>
-                            <p class="age" >33 года</p>
-                            <button class="button-visibility" type="button"
-                                onclick="nextElementSibling.classList.toggle('hidden')"></button>
-                            <div class="hidden">
-                                <p>Женат</p>
-                                <p>Живу в Санкт-Петербурге и переезжать не планирую :)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box2">
-                        <div class="education">
-                            <h2>ОБРАЗОВАНИЕ</h2>
-                            <p>GeekBrains (декабрь 2020&nbsp;-по&nbsp;настоящее время)</p>
-                            <p>Факультет: Fullstack JavaScript</p>
-                            <hr>
-                            <p>Балтийский Государственный Технический Университет «ВОЕНМЕХ» им.Д.Ф.Устинова (2004-2010)
-                            </p>
-                            <p>Специальность: Лазерные системы</p>
-                        </div>
-                        <div class="skills">
-                            <h2>НАВЫКИ</h2>
-                            <img src="img/triangle.svg" alt="JS" class="js">
-                        </div>
-                    </div>
-                    <div class="box3">
-                        <div class="container">
-                            <h2>ОПЫТ РАБОТЫ</h2>
-                            <div>
-                                <p>Ведущий инженер-конструктор</p>
-                                <p> Июль 2009 - настоящее время (<span  class="experience">10 лет 8 месяцев</span>)</p>
-                                <p>Электротяжмаш - Привод &lt;- Силовые машины - Электросила</p>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <h2>ОБО МНЕ</h2>
-                            <p>В прошлом году я решил сменить свою сферу деятельности и стать фронтенд разработчиком для
-                                чего и начал изучать JavaScript, HTML и CSS.</p>
-
-                            <p><a href="https://github.com/colonelgrek/" title="github.com">Мой профиль на github.</a>
-                            </p>
-                            <p><a href="https://www.hackerrank.com/colonelgrek?hr_r=1" title="www.hackerrank.com">Мой
-                                    профиль на hackerrank.</a></p>
-                        </div>
-                    </div>
-                </div>
-            </main>
+  <div class="wrapper">
+    <div class="top">
+      <header>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="index.html" class="iconHome">Главная</a>
+            </li>
+            <li>
+              <a href="tasksJS.html" class="iconRubiksCube">Задачи</a>
+            </li>
+            <li>
+              <a href="aboutMe.html" class="iconSmile">Обо мне</a>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a href="https://colonelgrek.github.io/gb-html-css-1/index.html" class="header__geekbrains"
+                    title="откроется в новой вкладке" target="_blanck">GeekBrains</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="wrap">
+        <nav>
+          <ul class="aboutMe__TOC"></ul>
+        </nav>
+        <div class="overlay" id="largePic">
+          <a href="#">
+            <img src="img/user.jpg" width="500" alt="Фотография кандидата на вакансию" />
+          </a>
         </div>
-        <footer>
-            <div class="footer">
-                <a class="footer-facebook" href="https://www.facebook.com/profile.php?id=100001684163786"></a>
-                <a class="footer-vk" href="https://vk.com/grekovsv"></a>
-                <a class="footer-email" href="mailto:greser@ya.ru">greser@ya.ru</a>
-                <a class="footer-phone" href="tel:+79110079403">+7 911 007 94 03</a>
+        <div class="mainBox">
+          <div class="box1">
+            <a href="#largePic">
+              <figure class="im">
+                <img src="img/user.jpg" alt="Фотография кандидата на вакансию">
+              </figure>
+            </a>
+            <div class="myName">
+              <h1>Греков Сергей</h1>
+              <p class="age">33 года</p>
+              <button class="button-visibility" type="button"
+                onclick="nextElementSibling.classList.toggle('hidden')"></button>
+              <div class="hidden">
+                <p>Женат</p>
+                <p>Живу в Санкт-Петербурге и переезжать не планирую :)</p>
+              </div>
             </div>
-        </footer>
+          </div>
+          <div class="box2">
+            <div class="education">
+              <h2>ОБРАЗОВАНИЕ</h2>
+              <p>GeekBrains (декабрь 2020&nbsp;-по&nbsp;настоящее время)</p>
+              <p>Факультет: Fullstack JavaScript</p>
+              <hr>
+              <p>Балтийский Государственный Технический Университет «ВОЕНМЕХ» им.Д.Ф.Устинова (2004-2010)
+              </p>
+              <p>Специальность: Лазерные системы</p>
+            </div>
+            <div class="skills">
+              <h2>НАВЫКИ</h2>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <button class = "skills__button" type="button">HTML</button>
+                  <img class = "hidden skills__img" src="img/html-5.svg" alt="HTML">
+                </li>
+                <li class="skills__item">
+                  <button class = "skills__button" type="button">CSS</button>
+                  <img class = "hidden skills__img" src="img/css-3.svg" alt="CSS">
+                </li>
+                <li class="skills__item">
+                  <button class = "skills__button" type="button">JavaScript</button>
+                  <img class = "hidden skills__img" src="img/js.svg" alt="JavaScript">
+                </li>
+                <li class="skills__item">
+                  <button class = "skills__button" type="button">GIT</button>
+                  <img class = "hidden skills__img" src="img/github-logo.svg" alt="GIT">
+                </li>
+                <li class="skills__item">
+                  <button class = "skills__button" type="button">Linux</button>
+                  <img class = "hidden skills__img" src="img/linux.svg" alt="Linux">
+                </li>
+                <li class="skills__item">
+                  <button class = "skills__button" type="button">SASS</button>
+                  <img class = "hidden skills__img" src="img/sass.svg" alt="SASS">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box3">
+            <div class="container">
+              <h2>ОПЫТ РАБОТЫ</h2>
+              <div>
+                <p>Ведущий инженер-конструктор</p>
+                <p> Июль 2009 - настоящее время (<span class="experience">10 лет 8 месяцев</span>)</p>
+                <p>Электротяжмаш - Привод &lt;- Силовые машины - Электросила</p>
+              </div>
+            </div>
+            <div class="container">
+              <h2>ОБО МНЕ</h2>
+              <p>В прошлом году я решил сменить свою сферу деятельности и стать фронтенд разработчиком для
+                чего и начал изучать JavaScript, HTML и CSS.</p>
+
+              <p><a href="https://github.com/colonelgrek/" title="github.com">Мой профиль на github.</a>
+              </p>
+              <p><a href="https://www.hackerrank.com/colonelgrek?hr_r=1" title="www.hackerrank.com">Мой
+                  профиль на hackerrank.</a></p>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-    <button class="up-button" type="button">&uarr;</button>
-    <script src="script/contents.js"></script>
-    <script src="script/countTime.js"></script>
-    <script src="script//up-button.js"></script>
+    <footer>
+      <div class="footer">
+        <a class="footer-facebook" href="https://www.facebook.com/profile.php?id=100001684163786"></a>
+        <a class="footer-vk" href="https://vk.com/grekovsv"></a>
+        <a class="footer-email" href="mailto:greser@ya.ru">greser@ya.ru</a>
+        <a class="footer-phone" href="tel:+79110079403">+7 911 007 94 03</a>
+      </div>
+    </footer>
+  </div>
+  <button class="up-button" type="button">&uarr;</button>
+  <script src="script/contents.js"></script>
+  <script src="script/countTime.js"></script>
+  <script src="script/accordionSkills.js"></script>
+  <script src="script//up-button.js"></script>
 </body>
 
 </html>

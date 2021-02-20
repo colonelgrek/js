@@ -182,7 +182,12 @@ figcaption {
 }
 /* ------------------------------ */
 /* ---aboutMe--- */
-.mainBox{
+.aboutMe {
+    background-image: url("img/spb1971eng2.png");
+    background-position: 50% -300px;
+}
+
+.mainBox {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -228,22 +233,17 @@ figcaption {
     text-align: right;
 }
 
-.box2 {
+.box2 h2 {
     text-align: center;
 }
 
-.box2 img{
-    display: block;
-    margin:auto;
-}
-
-.aboutMe .wrap ul {
+.aboutMe__TOC {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.aboutMe .wrap li {
+.aboutMe__TOC li {
     flex: 1 1 135px;
     border: 1px solid #3b3b3b ;
     border-radius: 5px;
@@ -253,17 +253,13 @@ figcaption {
     margin: 10px;
     text-align: center;
 }
-
-.aboutMe .wrap a {
+.aboutMe__TOC a {
     text-decoration: none;
     color: white;
     text-align: center;
 }
-.aboutMe .wrap a:hover,
-.aboutMe .wrap a:active {
-    color: black;
-}
-.aboutMe .container a {
+.aboutMe__TOC a:hover,
+.aboutMe__TOC a:active {
     color: black;
 }
 
@@ -310,7 +306,7 @@ figcaption {
 
 .overlay:target {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: fixed;
     top: 0;
@@ -321,9 +317,57 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.aboutMe {
-    background-image: url("img/spb1971eng2.png");
-    background-position: 50% -300px;
+.skills__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px 10px;
+}
+
+.skills__item--background::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("img/conerLeft.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.skills__item--background::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("img/conerLeft.svg");
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.skills__button {
+    align-self: flex-start;
+    padding: 0;
+
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    background-color: transparent;
+
+    border: none;
+    cursor: pointer;
+}
+.skills__button:focus {
+   outline: none;
+}
+
+.skills__img {
+    align-self: flex-end;
+    width: 80px;
 }
 /* ------------------------------ */
 /* ---footer--- */
@@ -408,6 +452,7 @@ footer {
     background-color: white;
     border: 4px solid;
     border-radius: 50%;
+    outline: none;
 
     cursor: pointer;
   }
