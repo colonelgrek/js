@@ -51,6 +51,7 @@
         <h2>Числовой палиндром</h2>
         <p>Программа должна проверять: является ли число палиндромом? <a href="https://en.wikipedia.org/wiki/Palindromic_number" title="wikipedia">Палиндром</a>
          - число, одинаково читающееся в обоих направлениях. Например 12321. Программа должна поддерживать только натуральные числа.</p>
+        <button class="like" type="button">likes: <span class="likes__number">5</span></button>
         <button class="button-play" data-name="numberPalindrome" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">let palindrome = +prompt( 'Введите число? которое следует проверить', 0);
@@ -75,6 +76,7 @@ if ((palindrome < 0) || isNaN(palindrome) || !Number.isInteger(palindrome)) {
             - в качестве второго аргумента символ, который мы будем искать в строке,<br>
             - возвращает количество символов, содержащихся в строке.
         </p>
+        <button class="like" type="button">likes: <span class="likes__number">7</span></button>
         <button class="button-play" data-name="countChar" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">function countBs( string, letter ){
@@ -95,6 +97,7 @@ alert ('В строке: "' + stringBase + '" ' + count + ' символов "' 
     <div>
         <h2>Простые числа</h2>
         <p>Написать программу вывода всех простых чисел из интервала от 2 до n (n вводит пользователь).</p>
+        <button class="like" type="button">likes: <span class="likes__number">11</span></button>
         <button class="button-play" data-name="primeNumber" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">let number = prompt( 'Введите число от 2 до n');
@@ -123,6 +126,7 @@ if ( !( +number != +number ) && number >= 2){
             а вместо чисел, кратных пяти — слово «Buzz».
             Если число кратно и 3, и 5, то программа должна выводить слово «FizzBuzz».
         </p>
+        <button class="like" type="button">likes: <span class="likes__number">25</span></button>
         <button class="button-play" data-name="FizzBuzz" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">let result = '';
@@ -145,6 +149,7 @@ alert(result);        </code></pre>
     <div>
         <h2>Функция min(a, b)</h2>
         <p>Написать программу вывода меньшего из двух чисел. Числа вводит пользователь.</p>
+        <button class="like" type="button">likes: <span class="likes__number">2</span></button>
         <button class="button-play" data-name="minA_B" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">function min(a, b){
@@ -163,6 +168,7 @@ if ( !isNaN(number1) && !isNaN(number2) ) {
     <div>
         <h2>Функция power(x, n)</h2>
         <p>Написать программу возведения числа х в степень n (без использования оператора "**"). n может принимать только натуральные значения.</p>
+        <button class="like" type="button">likes: <span class="likes__number">14</span></button>
         <button class="button-play" data-name="powerX_n" type="button">Запустить программу</button>
         <button class="button-solution" type="button">Код решения</button>
         <pre><code class="language-JavaScript solution-hide">function power(x, n){
@@ -197,7 +203,8 @@ if ( n < 0 ) {
 
 <script src="script/toggleVisibility.js"></script>
 <script src="script/playSolution.js"></script>
-<script src="script//up-button.js"></script>
+<script src="script/up-button.js"></script>
+<script src="script/likes.js"></script>
 
 <script src="jsTask/numberPalindrome.js"></script>
 <script src="jsTask/countChar.js"></script>
